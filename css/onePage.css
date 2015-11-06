@@ -1,0 +1,230 @@
+body {
+    /*color: #98FF98;*/
+    margin: 0px;
+    /*background-color: #BFBFBF;*/
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    padding: 0px;
+    margin:0px;
+}
+
+h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
+a,
+a:visited {
+    color: #696969;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #40ACEA;
+}
+
+a > span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  /* edit: added z-index */
+  z-index: 1;
+}
+
+#background {
+    background-image: url('http://static.tumblr.com/d61a75cf50505d2eabf97c07459072bc/ct4fg3v/bTxmyur2r/tumblr_static_swpc_background.jpg');
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+/* Banner CSS */
+
+header {
+    background: no-repeat center right fixed url(../img/hogwarts-full.jpg);
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    color: white;
+}
+
+.bannerContainer {
+    margin-top: 50px;
+    margin-right: 50px;
+    float: right;
+}
+
+.bannerContainer h1,
+.bannerContainer h2 {
+    text-align: right;
+}
+
+.name  {
+    font-size:50px;
+}
+
+.profile {
+    width: 250px;
+    height: 250px;
+    float: left;
+    border-radius: 50%;
+    margin-left: 180px;
+    margin-top: -100px;
+}
+
+/* Navigation Bar CSS */
+
+#myScrollspy {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s 0s, visibility 0s 0.2s;
+}
+
+#myScrollspy li {
+    display: block;
+    text-align: center;
+    float: none;
+    height: 100px;
+    padding-top: 30px;
+    width: 120px;
+    background: white;
+    color: #40ACEA;
+    /*border-bottom: 1px solid #AAAAAA;*/
+    margin-bottom: 2px;
+    text-decoration: none;
+}
+
+/* Content CSS */
+
+.container {
+    margin: auto;
+    width: 60%;
+}
+
+.container h2 {
+    padding-top: 20px;
+    color: #40ACEA;
+}
+
+.container .content {
+    padding: 15px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+#about {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.details {
+    display: inline-block;
+    width: 40%;
+}
+
+.details div,
+.details h5,
+.details p {
+    display: inline-block;
+}
+
+#workExperience ul {
+    padding-left: 24px;
+}
+
+/* Project Card CSS */
+.project {
+    padding: 10px;
+    color: #000000;
+    background: #40ACEA;
+}
+
+.project > h4 {
+    color: black;
+    margin: 0px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.project > .image {
+    height: 200px;
+    position: relative;
+}
+
+.project > .image > img,
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.project > .description {
+    /*visibility: hidden;*/
+}
+
+.project .externalLink {
+    float: right;
+}
+
+.overlay {
+    padding: 10px;
+    background-color: #40ACEA;
+    opacity: 0.85;
+}
+
+/* Contact CSS */
+.contact {
+    font-size: 20px;
+}
+
+.contact > a > i {
+    font-size: 24px;
+}
+
+/* Footer CSS */
+footer {
+    padding: 15px;
+    background: #B7B8BA;
+    text-align: center;
+}
+
+.footerLink > i {
+    font-size: 25px;
+    color: #000000;
+    margin: 10px;
+}
+
+footer > p {
+    margin: 0px;
+    font-size: 14px;
+}
+
+footer > p > a,
+footer > p > a:visited {
+    color: #136FA5;
+}
