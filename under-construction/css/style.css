@@ -37,7 +37,7 @@ body{
 	 margin-top:10px;
 }
 .logo{
-	float:left;
+	 /*float:left;*/
 	 margin:10px 0px;
 	 width:100px;
 	 background:#201F27;
@@ -57,7 +57,9 @@ body{
 }
 /** Social Icons **/
 .social-icons {
-	float:right;
+	width: 183px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .social-icons ul li:first-child, ol li:first-child {
 	margin-left: 0px;
