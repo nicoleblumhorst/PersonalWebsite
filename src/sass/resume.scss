@@ -203,7 +203,12 @@ a {
 
 	.content-left {
 	    text-align: right;
+	    padding-top: 30px;
 	}
+
+	.content-right {
+        padding-top: 30px;
+    }
 
     .content {
         padding-top: 0px;
@@ -227,7 +232,7 @@ a {
 	}
 
     .sectionBody {
-        width: 70%;
+        width: 60%;
         margin: auto;
         background: $color_projects;
 

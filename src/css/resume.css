@@ -112,7 +112,10 @@ a {
     font-weight: bold;
     color: #FFFFFF; }
   #aboutMe .content-left {
-    text-align: right; }
+    text-align: right;
+    padding-top: 30px; }
+  #aboutMe .content-right {
+    padding-top: 30px; }
   #aboutMe .content {
     padding-top: 0px;
     width: 80%; }
@@ -128,7 +131,7 @@ a {
     text-align: center;
     color: #000000; }
   #projects .sectionBody {
-    width: 70%;
+    width: 60%;
     margin: auto;
     background: #7EC2AA; }
     #projects .sectionBody .content {
