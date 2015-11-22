@@ -1,0 +1,371 @@
+//colors
+$color_white: #FFFFFF;
+$color_lightest_gray: #EFEFEF;
+$color_lighter_gray: #DDDDDD;
+$color_light_gray: #AAAAAA;
+$color_medium_gray: #999999;
+$color_dark_gray: #333333;
+$color_black: #000000;
+
+$color_dark_magenta: #57102C;
+$color_magenta: #AA2159;
+$color_dark_cyan: #009D97;
+$color_light_cyan: #7EC2AA;
+$color_dark_lime_green: #67B913;
+
+$color_about_me: $color_magenta;
+$color_work_experience: $color_dark_lime_green;
+$color_education: $color_dark_cyan;
+$color_projects: $color_light_cyan;
+$color_contact: $color_dark_magenta;
+
+$color_header_light: $color_white;
+$color_text_light: $color_lightest_gray;
+$color_header_dark: $color_black;
+$color_text_dark: $color_dark_gray;
+
+$color_navbar: $color_white;
+$color_navbar_text: $color_black;
+
+$color_footer: $color_medium_gray;
+$color_footer_text: $color_dark_gray;
+$color_footer_link: $color_dark_magenta;
+
+//fonts
+$font_main: Lato;
+$font_backup: sans-serif;
+
+// @extend-elements
+// original selectors
+// .project >.image >img, .overlay
+.fullImage {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.arrowButton {
+    background: $color_white;
+    color: $color_dark_cyan;
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+    border-radius: 50%;
+    z-index: 10;
+    padding-top: 2px;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+body {
+	margin: 0;
+	font-family: $font_main, $font_backup;
+	font-size: 18px;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: $color_dark_gray;
+
+	&:visited {
+		color: $color_dark_gray;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: $color_light_gray;
+	}
+
+	> span {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+}
+
+.navbar {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+	border: none;
+	border-bottom: thick solid $color_dark_magenta;
+	background-color: $color_navbar;
+	color: $color_white;
+	box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+
+    .navbar-content {
+        width: 70%;
+        margin: auto;
+    }
+
+	.navbar-nav {
+	    .a {
+	        text-decoration: bold;
+	    }
+
+	    .nav-about > a {
+	        color: $color_about_me;
+	        &:hover {
+                color: $color_about_me;
+                background-color: $color_lightest_gray;
+            }
+	    }
+        .nav-work > a {
+            color: $color_work_experience;
+            &:hover {
+                color: $color_work_experience;
+                background-color: $color_lightest_gray;
+            }
+        }
+        .nav-education > a {
+            color: $color_education;
+            &:hover {
+                color: $color_education;
+                background-color: $color_lightest_gray;
+            }
+        }
+        .nav-projects > a {
+            color: $color_projects;
+            &:hover {
+                color: $color_projects;
+                background-color: $color_lightest_gray;
+            }
+        }
+        .nav-contact > a {
+            color: $color_contact;
+            &:hover {
+                color: $color_contact;
+                background-color: $color_lightest_gray;
+            }
+        }
+
+	}
+
+	.navbar-brand {
+        padding-left: 0px;
+        color: $color_dark_magenta;
+        font-size: 30px;
+
+        &:hover {
+            color: $color_dark_magenta;
+        }
+	}
+}
+
+.section {
+	.sectionBody {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.content {
+		margin: auto;
+		width: 60%;
+		padding-top: 20px;
+	}
+
+	h2 {
+		width: 70%;
+		margin: auto;
+	}
+
+	ul {
+		padding-left: 24px;
+	}
+}
+
+#aboutMe {
+	background: $color_about_me;
+	color: $color_text_light;
+
+	h2 {
+		color: $color_header_light;
+	}
+
+	h4 {
+	    font-weight: bold;
+	    color: $color_header_light;
+	}
+
+	.content-left {
+	    text-align: right;
+	}
+
+    .content {
+        padding-top: 0px;
+        width: 80%;
+    }
+
+	.profile {
+    	width: 100%;
+    	border-radius: 50%;
+    }
+}
+
+#projects {
+	background: $color_lightest_gray;
+	color: $color_text_dark;
+	padding-top: 20px;
+
+	h2 {
+	    text-align: center;
+		color: $color_header_dark;
+	}
+
+    .sectionBody {
+        width: 70%;
+        margin: auto;
+        background: $color_projects;
+
+        .content {
+            margin: auto;
+            width: 90%;
+            padding-top: 20px;
+            display: inline-block;
+        }
+
+        .previous {
+            @extend .arrowButton;
+            padding-left: 8px;
+            display: inline-block;
+        }
+
+        .next {
+            @extend .arrowButton;
+            padding-left: 13px;
+            display: inline-block;
+        }
+    }
+
+	.project {
+    	padding: 10px;
+    	color: $color_black;
+    	background: $color_dark_cyan;
+
+    	> h4 {
+    		color: $color_black;
+    		margin: 0;
+    		padding-bottom: 10px;
+    		width: 100%;
+    	}
+
+    	> {
+    		.image {
+    			height: 200px;
+    			position: relative;
+    			> img {
+    				@extend .fullImage;
+    			}
+    		}
+
+    		.description {
+    		}
+    	}
+
+    	.externalLink {
+    		float: right;
+    	}
+    }
+}
+
+#workExperience {
+	background: $color_lightest_gray;
+	color: $color_text_dark;
+
+	h2 {
+		color: $color_work_experience;
+	}
+
+}
+
+#education {
+	background: $color_lightest_gray;
+	color: $color_text_dark;
+
+	h2 {
+		color: $color_education;
+	}
+}
+
+#contact {
+	background: $color_contact;
+	color: $color_text_light;
+
+	h2 {
+		color: $color_header_light;
+	}
+
+	.contact {
+
+    	font-size: 20px;
+    	> a {
+    	    color: $color_lighter_gray;
+
+            > i {
+                color: $color_white;
+                font-size: 24px;
+            }
+    	}
+    }
+}
+
+.overlay {
+	@extend .fullImage;
+	padding: 10px;
+	background-color: $color_work_experience;
+	opacity: 0.85;
+}
+
+footer {
+	padding: 15px;
+	background: $color_footer;
+	color: $color_footer_text;
+	text-align: center;
+
+	.footerLink > i {
+    	font-size: 25px;
+    	color: $color_footer_link;
+    	margin: 10px;
+
+    	&:visited {
+			color: $color_footer_link;
+		}
+    }
+
+	> p {
+		margin: 0;
+		font-size: 14px;
+
+		> a {
+			color: $color_footer_link;
+
+			&:visited {
+				color: $color_footer_link;
+			}
+		}
+	}
+}
+
+/* not in use, but it works so I am not deleting it */
+#background {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
