@@ -15,6 +15,7 @@
   z-index: 10;
   padding-top: 2px;
   position: absolute;
+  margin-top: 100px;
   overflow: hidden;
   box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4); }
 
@@ -29,7 +30,8 @@ h1 {
 
 h2 {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-weight: bold; }
 
 a {
   color: #333333; }
@@ -57,7 +59,7 @@ a {
     width: 70%;
     margin: auto; }
   .navbar .navbar-nav .a {
-    text-decoration: bold; }
+    font-weight: bold; }
   .navbar .navbar-nav .nav-about > a {
     color: #AA2159; }
     .navbar .navbar-nav .nav-about > a:hover {
@@ -86,7 +88,8 @@ a {
   .navbar .navbar-brand {
     padding-left: 0px;
     color: #57102C;
-    font-size: 30px; }
+    font-size: 30px;
+    font-family: Lobster Two, sans-serif; }
     .navbar .navbar-brand:hover {
       color: #57102C; }
 
@@ -140,11 +143,11 @@ a {
       padding-top: 20px;
       display: inline-block; }
     #projects .sectionBody .previous {
-      padding-left: 8px;
-      display: inline-block; }
+      margin-left: -15px;
+      padding-left: 8px; }
     #projects .sectionBody .next {
       padding-left: 13px;
-      display: inline-block; }
+      maring-left: 20px; }
   #projects .project {
     padding: 10px;
     color: #000000;

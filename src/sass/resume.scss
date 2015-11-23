@@ -33,7 +33,8 @@ $color_footer_link: $color_dark_magenta;
 
 //fonts
 $font_main: Lato;
-$font_backup: sans-serif;
+$font_sans_serif: sans-serif;
+$font_header: Lobster Two;
 
 // @extend-elements
 // original selectors
@@ -56,13 +57,14 @@ $font_backup: sans-serif;
     z-index: 10;
     padding-top: 2px;
     position: absolute;
+    margin-top: 100px;
     overflow: hidden;
     box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
 }
 
 body {
 	margin: 0;
-	font-family: $font_main, $font_backup;
+	font-family: $font_main, $font_sans_serif;
 	font-size: 18px;
 }
 
@@ -74,6 +76,7 @@ h1 {
 h2 {
 	padding: 0;
 	margin: 0;
+	font-weight: bold;
 }
 
 a {
@@ -114,7 +117,7 @@ a {
 
 	.navbar-nav {
 	    .a {
-	        text-decoration: bold;
+	        font-weight: bold;
 	    }
 
 	    .nav-about > a {
@@ -159,6 +162,7 @@ a {
         padding-left: 0px;
         color: $color_dark_magenta;
         font-size: 30px;
+        font-family: $font_header, $font_sans_serif;
 
         &:hover {
             color: $color_dark_magenta;
@@ -245,14 +249,14 @@ a {
 
         .previous {
             @extend .arrowButton;
+            margin-left: -15px;
             padding-left: 8px;
-            display: inline-block;
         }
 
         .next {
             @extend .arrowButton;
             padding-left: 13px;
-            display: inline-block;
+            maring-left: 20px;
         }
     }
 
