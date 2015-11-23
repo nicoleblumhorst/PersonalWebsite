@@ -47,7 +47,14 @@ $font_header: Lobster Two;
 	left: 0;
 }
 
+.shadow {
+    -webkit-box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
 .arrowButton {
+    @extend .shadow;
     background: $color_white;
     color: $color_dark_cyan;
     width: 40px;
@@ -59,7 +66,6 @@ $font_header: Lobster Two;
     position: absolute;
     margin-top: 100px;
     overflow: hidden;
-    box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
 }
 
 body {
@@ -103,12 +109,12 @@ a {
 
 .navbar {
 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	@extend .shadow;
 	border-radius: 0;
 	border: none;
 	border-bottom: thick solid $color_dark_magenta;
 	background-color: $color_navbar;
 	color: $color_white;
-	box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
 
     .navbar-content {
         width: 70%;
@@ -241,22 +247,22 @@ a {
         background: $color_projects;
 
         .content {
-            margin: auto;
-            width: 90%;
-            padding-top: 20px;
-            display: inline-block;
+            width: 100%;
+            padding-top: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
         .previous {
             @extend .arrowButton;
-            margin-left: -15px;
+            margin-left: -20px;
             padding-left: 8px;
         }
 
         .next {
             @extend .arrowButton;
+            margin-left: -20px;
             padding-left: 13px;
-            maring-left: 20px;
         }
     }
 

@@ -5,6 +5,14 @@
   top: 0;
   left: 0; }
 
+.shadow, .arrowButton, #projects .sectionBody .previous, #projects .sectionBody .next, .navbar {
+  -webkit-box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+
 .arrowButton, #projects .sectionBody .previous, #projects .sectionBody .next {
   background: #FFFFFF;
   color: #009D97;
@@ -16,8 +24,7 @@
   padding-top: 2px;
   position: absolute;
   margin-top: 100px;
-  overflow: hidden;
-  box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4); }
+  overflow: hidden; }
 
 body {
   margin: 0;
@@ -53,8 +60,7 @@ a {
   border: none;
   border-bottom: thick solid #57102C;
   background-color: #FFFFFF;
-  color: #FFFFFF;
-  box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4); }
+  color: #FFFFFF; }
   .navbar .navbar-content {
     width: 70%;
     margin: auto; }
@@ -138,16 +144,16 @@ a {
     margin: auto;
     background: #7EC2AA; }
     #projects .sectionBody .content {
-      margin: auto;
-      width: 90%;
-      padding-top: 20px;
-      display: inline-block; }
+      width: 100%;
+      padding-top: 40px;
+      padding-left: 20px;
+      padding-right: 20px; }
     #projects .sectionBody .previous {
-      margin-left: -15px;
+      margin-left: -20px;
       padding-left: 8px; }
     #projects .sectionBody .next {
-      padding-left: 13px;
-      maring-left: 20px; }
+      margin-left: -20px;
+      padding-left: 13px; }
   #projects .project {
     padding: 10px;
     color: #000000;
