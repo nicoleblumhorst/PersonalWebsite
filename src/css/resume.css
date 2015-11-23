@@ -1,4 +1,4 @@
-.fullImage, #projects .project > .image > img, .overlay {
+.fullImage, .overlay {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -39,6 +39,10 @@ h2 {
   padding: 0;
   margin: 0;
   font-weight: bold; }
+
+h3 {
+  padding: 0;
+  margin: 0; }
 
 a {
   color: #333333; }
@@ -102,6 +106,11 @@ a {
 .section .sectionBody {
   padding-top: 40px;
   padding-bottom: 40px; }
+  .section .sectionBody .headerUnderline {
+    margin: 20px auto 0px auto;
+    background: #000000;
+    height: 4px;
+    width: 80px; }
 .section .content {
   margin: auto;
   width: 60%;
@@ -145,7 +154,7 @@ a {
     background: #7EC2AA; }
     #projects .sectionBody .content {
       width: 100%;
-      padding-top: 40px;
+      padding-top: 10px;
       padding-left: 20px;
       padding-right: 20px; }
     #projects .sectionBody .previous {
@@ -157,15 +166,11 @@ a {
   #projects .project {
     padding: 10px;
     color: #000000;
-    background: #009D97; }
-    #projects .project > h4 {
+    white-space: normal; }
+    #projects .project > h3 {
       color: #000000;
-      margin: 0;
       padding-bottom: 10px;
-      width: 100%; }
-    #projects .project > .image {
-      height: 200px;
-      position: relative; }
+      text-align: center; }
     #projects .project .externalLink {
       float: right; }
 

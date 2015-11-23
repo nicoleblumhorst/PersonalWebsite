@@ -85,6 +85,11 @@ h2 {
 	font-weight: bold;
 }
 
+h3 {
+    padding: 0;
+	margin: 0;
+}
+
 a {
 	color: $color_dark_gray;
 
@@ -180,6 +185,13 @@ a {
 	.sectionBody {
 		padding-top: 40px;
 		padding-bottom: 40px;
+
+		.headerUnderline {
+		    margin: 20px auto 0px auto;
+            background: $color_black;
+            height: 4px;
+            width: 80px;
+		}
 	}
 
 	.content {
@@ -248,7 +260,7 @@ a {
 
         .content {
             width: 100%;
-            padding-top: 40px;
+            padding-top: 10px;
             padding-left: 20px;
             padding-right: 20px;
         }
@@ -269,26 +281,12 @@ a {
 	.project {
     	padding: 10px;
     	color: $color_black;
-    	background: $color_dark_cyan;
+    	white-space: normal;
 
-    	> h4 {
+    	> h3 {
     		color: $color_black;
-    		margin: 0;
     		padding-bottom: 10px;
-    		width: 100%;
-    	}
-
-    	> {
-    		.image {
-    			height: 200px;
-    			position: relative;
-    			> img {
-    				@extend .fullImage;
-    			}
-    		}
-
-    		.description {
-    		}
+    		text-align: center;
     	}
 
     	.externalLink {
