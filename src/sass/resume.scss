@@ -353,7 +353,6 @@ a {
 }
 
 #technicalSkills {
-
 	h2 {
 		padding-left: 40px;
 		width: 100%;
@@ -365,20 +364,33 @@ a {
 		margin-bottom: 5px;
 	}
 
-
-
 	.bar {
-		width: 100%;
+		width: 1%;
+		height: 300px;
+		margin-top: 100px;
+		background: $color_light_lime_green;
+		z-index: -98;
+	}
+	.bar-shadow {
+		@extend .shadow;
+		width: 10%;
 		height: 300px;
 		margin-top: 100px;
 		background: $color_light_lime_green;
 		z-index: -99;
 	}
 
+	.bar-left {
+		float: left;
+	}
+	.bar-right {
+		float: right;
+	}
+
 	.sectionBody {
+		@extend .shadow;
 		width: 80%;
 		margin: auto;
-		margin-top: -400px;
 		background: $color_light_lime_green;
 
 		.content {
