@@ -10,14 +10,20 @@ $color_black: #000000;
 $color_dark_magenta: #57102C;
 $color_magenta: #AA2159;
 $color_dark_cyan: #009D97;
+$color_super_dark_cyan: #025D59;
 $color_light_cyan: #7EC2AA;
 $color_dark_lime_green: #67B913;
+$color_super_dark_lime_green: #335c0a;
+$color_light_lime_green: #c0f38b;
 
 $color_about_me: $color_magenta;
 $color_work_experience: $color_dark_lime_green;
 $color_education: $color_dark_cyan;
+$color_technical_skills: $color_super_dark_lime_green;
 $color_projects: $color_light_cyan;
 $color_contact: $color_dark_magenta;
+
+$color_about_me_gradient: #4A2232;
 
 $color_header_light: $color_white;
 $color_text_light: $color_lightest_gray;
@@ -35,6 +41,7 @@ $color_footer_link: $color_dark_magenta;
 $font_main: Lato;
 $font_sans_serif: sans-serif;
 $font_header: Lobster Two;
+$font_cursive: cursive;
 
 // @extend-elements
 // original selectors
@@ -48,15 +55,15 @@ $font_header: Lobster Two;
 }
 
 .shadow {
-    -webkit-box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);  /* Firefox 3.5 - 3.6 */
-    box-shadow:         0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    -webkit-box-shadow: 0 0px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0 0px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         0 0px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
 .arrowButton {
     @extend .shadow;
     background: $color_white;
-    color: $color_dark_cyan;
+    color: $color_super_dark_cyan;
     width: 40px;
     height: 40px;
     font-size: 26px;
@@ -72,6 +79,7 @@ body {
 	margin: 0;
 	font-family: $font_main, $font_sans_serif;
 	font-size: 18px;
+	background: $color_lightest_gray;
 }
 
 h1 {
@@ -138,6 +146,13 @@ a {
                 background-color: $color_lightest_gray;
             }
 	    }
+	    .nav-experience > a {
+	    	color: $color_work_experience;
+			&:hover {
+				color: $color_work_experience;
+				background-color: $color_lightest_gray;
+			}
+	    }
         .nav-work > a {
             color: $color_work_experience;
             &:hover {
@@ -152,6 +167,13 @@ a {
                 background-color: $color_lightest_gray;
             }
         }
+        .nav-technical > a {
+			color: $color_technical_skills;
+			&:hover {
+				color: $color_technical_skills;
+				background-color: $color_lightest_gray;
+			}
+		}
         .nav-projects > a {
             color: $color_projects;
             &:hover {
@@ -173,7 +195,7 @@ a {
         padding-left: 0px;
         color: $color_dark_magenta;
         font-size: 30px;
-        font-family: $font_header, $font_sans_serif;
+        font-family: $font_header, $font_cursive;
 
         &:hover {
             color: $color_dark_magenta;
@@ -187,7 +209,7 @@ a {
 		padding-bottom: 40px;
 
 		.headerUnderline {
-		    margin: 20px auto 0px auto;
+		    margin: 15px auto 0px auto;
             background: $color_black;
             height: 4px;
             width: 80px;
@@ -211,11 +233,19 @@ a {
 }
 
 #aboutMe {
-	background: $color_about_me;
+	background: -webkit-linear-gradient($color_about_me, $color_about_me_gradient); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient($color_about_me, $color_about_me_gradient); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient($color_about_me, $color_about_me_gradient); /* For Firefox 3.6 to 15 */
+	background: linear-gradient($color_about_me, $color_about_me_gradient); /* Standard syntax */
+
+	padding-bottom: 100px;
 	color: $color_text_light;
 
 	h2 {
-		color: $color_header_light;
+		text-align: center;
+		font-weight: bold;
+		font-size: 50px;
+		font-family: $font_header, $font_sans_serif;
 	}
 
 	h4 {
@@ -244,9 +274,8 @@ a {
 }
 
 #projects {
-	background: $color_lightest_gray;
 	color: $color_text_dark;
-	padding-top: 20px;
+	margin-top: -100px;
 
 	h2 {
 	    text-align: center;
@@ -254,9 +283,12 @@ a {
 	}
 
     .sectionBody {
+		@extend .shadow;
         width: 60%;
         margin: auto;
         background: $color_projects;
+        padding-top: 20px;
+        padding-bottom: 20px;
 
         .content {
             width: 100%;
@@ -289,14 +321,87 @@ a {
     		text-align: center;
     	}
 
-    	.externalLink {
+    	a {
+    		color: $color_super_dark_cyan;
     		float: right;
+
+    		&:hover {
+				color: $color_dark_gray;
+			}
+			&:visited {
+				color: $color_super_dark_cyan;
+			}
     	}
+
+
+    }
+
+    .projectNavigation {
+    	text-align: center;
+
+    	a {
+			color: $color_super_dark_cyan;
+
+			&:hover {
+				color: $color_super_dark_cyan;
+			}
+			&:visited {
+				color: $color_super_dark_cyan;
+			}
+		}
     }
 }
 
+#technicalSkills {
+
+	h2 {
+		padding-left: 40px;
+		width: 100%;
+		color: $color_super_dark_lime_green;
+	}
+
+	h3 {
+		margin-top: 20px;
+		margin-bottom: 5px;
+	}
+
+
+
+	.bar {
+		width: 100%;
+		height: 300px;
+		margin-top: 100px;
+		background: $color_light_lime_green;
+		z-index: -99;
+	}
+
+	.sectionBody {
+		width: 80%;
+		margin: auto;
+		margin-top: -400px;
+		background: $color_light_lime_green;
+
+		.content {
+			width: 90%;
+			padding-top: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+}
+
+.skillLabel {
+	margin-left: 20px;
+}
+
+.skillStrength {
+	color: $color_super_dark_lime_green;
+	font-size: 18px;
+	float: right;
+	margin-right: 20px;
+}
+
 #workExperience {
-	background: $color_lightest_gray;
 	color: $color_text_dark;
 
 	h2 {
@@ -306,7 +411,6 @@ a {
 }
 
 #education {
-	background: $color_lightest_gray;
 	color: $color_text_dark;
 
 	h2 {

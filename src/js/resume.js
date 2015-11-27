@@ -1,19 +1,22 @@
 $(document).ready(function(){
-    $("header").height($(window).height());
 
-    $(".overlay").hide();
-});
+    $('.skill').on('mouseenter', function() {
+    	$(this).css("background", "rgba(255, 255, 255, 0.4)");
+    });
 
-$(".project").mouseenter(function(){
-    var projectName = $(this).find("h4").text();
-    $(this).find(".overlay").fadeIn("fast");
-});
+    $('.skill').on('mouseleave', function() {
+        $(this).css("background", "none");
+    });
 
-$(".project").mouseleave(function(){
-    var projectName = $(this).find("h4").text();
-    $(this).find(".overlay").fadeOut("fast");
-});
+    $('a[href*=#]').on('click', function(e)
+    {
+        e.preventDefault();
 
-$(window).resize(function(){
-    $("header").height($(window).height());
+        if( $( $.attr(this, 'href') ).length > 0 ) {
+            $('html, body').animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top - 50
+            }, 200);
+        }
+        return false;
+    });
 });

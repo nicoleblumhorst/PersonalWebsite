@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+    <title>Nicole Blumhorst</title>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Nicole Blumhorst</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Headers for working offline -->
+    <!--<link rel="stylesheet" href="resources/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="resources/fonts.css" type="text/css">-->
+    <!--<link rel="stylesheet" href="resources/font-awesome/4.5.0/css/font-awesome.min.css">-->
+    <!--<script src="resources/jquery/1.11.3/jquery.min.js"></script>-->
+    <!--<script src="resources/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    <!-- End of Headers for working offline -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,700' type='text/css'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lobster+Two' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/resume.css">
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/resume.js"></script>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
@@ -31,8 +37,10 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-about"><a href="#aboutMe">About Me</a></li>
                 <li class="nav-projects"><a href="#projects">Projects</a></li>
-                <li class="nav-work"><a href="#workExperience">Work Experience</a></li>
-                <li class="nav-education"><a href="#education">Education</a></li>
+                <li class="nav-experience"><a href="#workExperience">Experience</a></li>
+                <!--<li class="nav-work"><a href="#workExperience">Work Experience</a></li>-->
+                <!--<li class="nav-technical"><a href="#technicalSkills">Technical Skills</a></li>-->
+                <!--<li class="nav-education"><a href="#education">Education</a></li>-->
                 <li class="nav-contact"><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -43,26 +51,31 @@
     <div>
         <div id="aboutMe" class="section">
             <div class="sectionBody">
-                <div class="content row">
-                    <div class="content-left col-lg-4 col-md-4 col-sm-4">
-                        <h4>Name</h4>
-                        <p>Nicole Blumhorst</p>
-                        <h4>Occupation</h4>
-                        <p>Software Engineer</p>
-                        <h4>Employeer</h4>
-                        <p>Enterprise Holdings</p>
-                        <h4>Birthday</h4>
-                        <p>July 2, 1991</p>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <img class="profile" src="img/profile.jpg">
-                    </div>
-                    <div class="content-right col-lg-4 col-md-4 col-sm-4">
-                        <h4>About Me</h4>
-                        <p>I love developing clean, well organized user interfaces (mobile development being my favorite), but
-                            don't mind coding backend projects, too.  When I am not at work I love scouring the internet for new
-                            music, planning vacations or watching/listening/reading a zombie story.
-                        </p>
+
+                <div class="content">
+                    <h2>NICOLE BLUMHORST</h2>
+                    <h2>SOFTWARE ENGINEER</h2>
+                    <div class="row">
+                        <div class="content-left col-lg-4 col-md-4 col-sm-4">
+                            <h4>Name</h4>
+                            <p>Nicole Blumhorst</p>
+                            <h4>Occupation</h4>
+                            <p>Software Engineer</p>
+                            <h4>Employeer</h4>
+                            <p>Enterprise Holdings</p>
+                            <h4>Birthday</h4>
+                            <p>July 2, 1991</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <img class="profile" src="img/profile.jpg">
+                        </div>
+                        <div class="content-right col-lg-4 col-md-4 col-sm-4">
+                            <h4>About Me</h4>
+                            <p>I love developing clean, well organized user interfaces (mobile development being my favorite), but
+                                don't mind coding backend projects, too.  When I am not at work I love scouring the internet for new
+                                music, planning vacations or watching/listening/reading a zombie story.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -70,12 +83,10 @@
 
         <div id="projects" class="section">
             <div class="sectionBody">
-                <h2 class="header">Projects</h2>
+                <h2 class="header">My Projects</h2>
                 <div class="headerUnderline"></div>
                 <div style="white-space: nowrap;">
-                    <a class="previous" style="display: inline-block;">
-                        <i class="fa fa-chevron-left"></i>
-                    </a>
+                    <a class="previous"><i class="fa fa-chevron-left"></i></a>
                     <div class="content row" style="display: inline-block;">
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div id="ammo" class="project">
@@ -88,9 +99,11 @@
                                             into a First-Person RPG with missions to teach blind students the programming
                                             language, Quorum.  We also added an experimental First-Person Shooter aspect
                                             for blind players.</p>
+                                        <a href="http://sourceforge.net/projects/ammo/" style="margin-top: 20px;">
+                                            Find out more info <i class="fa fa-chevron-right"></i>
+                                        </a>
                                     </div>
                                 </div>
-                                <a href="http://sourceforge.net/projects/ammo/"><span></span></a>
                             </div>
                         </div>
 
@@ -111,10 +124,15 @@
                             <!--</div>-->
                         <!--</div>-->
                     </div>
-                    <a class="next" style="display: inline-block;">
-                        <i class="fa fa-chevron-right"></i>
-                    </a>
+                    <a class="next"><i class="fa fa-chevron-right"></i></a>
                 </div>
+
+                <div class="projectNavigation">
+                    <a><i id="project1" class="fa fa-circle"></i></a>
+                    <a><i id="project2" class="fa fa-circle-o"></i></a>
+                    <a><i id="project3" class="fa fa-circle-o"></i></a>
+                </div>
+
             </div>
         </div>
 
@@ -168,6 +186,255 @@
             </div>
         </div>
 
+        <div id="technicalSkills" class="section">
+            <div class="bar"></div>
+            <div class="sectionBody">
+                <h2>Technical Skills</h2>
+
+                <div class="content row">
+                    <div class="col-md-6 col-sm-12 col-xs-12" style="inline-block">
+                        <h3>Languages</h3>
+                        <div class="skill">
+                            <span class="skillLabel">Java</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">Objective C</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">C++</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">VB</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">HTML(5)</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">CSS(3)</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">Javascript</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">C#</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <h3>Frameworks</h3>
+                        <div class="skill">
+                            <span class="skillLabel">Spring Framework</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">Android</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">Sass</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">iOS</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">Spring MVC</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">JQuery</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">Bootstrap</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">Hibernate</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <h3>Tools</h3>
+                        <div class="skill">
+                            <span class="skillLabel">IntelliJ</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">Git</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">Android Studio</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">XCode</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">Visual Studio 2010</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">Netbeans</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <div class="skill">
+                            <span class="skillLabel">Subversion</span>
+                            <span class="skillStrength">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="education" class="section">
             <div class="sectionBody">
                 <h2 class="header">Education</h2>
@@ -198,11 +465,9 @@
             </div>
         </div>
 
-        <!--<div id="technicalSkills" class="section"></div>-->
-
         <div id="contact" class="section">
             <div class="sectionBody">
-                <h2 class="header">Contact</h2>
+                <h2 class="header">How To Contact Me</h2>
                 <div class="content">
                     <div class="row" style="width:100%;">
                         <!-- Icons by Icons8 -->
@@ -253,7 +518,8 @@
         </div>
 
         <p>Thanks for visiting my website!</p>
-        <p>This website uses icons from <a href="http://fontawesome.io">Font Awesome by Dave Gandy</a></p>
+        <p>...and, yes, I did make this site myself. <a href="https://github.com/nicoleblumhorst/PersonalWebsite">Here is the code</a> if you would like to check it out.</p>
+        <p>...except the icons, those are from <a href="http://fontawesome.io">Font Awesome by Dave Gandy</a></p>
     </footer>
 
 </body>
