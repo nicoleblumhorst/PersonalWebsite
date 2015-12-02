@@ -18,7 +18,7 @@ $color_light_lime_green: #c0f38b;
 
 $color_about_me: $color_magenta;
 $color_work_experience: $color_dark_lime_green;
-$color_education: $color_dark_cyan;
+$color_education: $color_dark_lime_green;
 $color_technical_skills: $color_super_dark_lime_green;
 $color_projects: $color_light_cyan;
 $color_contact: $color_dark_magenta;
@@ -241,6 +241,13 @@ a {
 	padding-bottom: 100px;
 	color: $color_text_light;
 
+	h1 {
+		text-align: center;
+		font-weight: bold;
+		font-size: 80px;
+		font-family: $font_header, $font_sans_serif;
+	}
+
 	h2 {
 		text-align: center;
 		font-weight: bold;
@@ -284,7 +291,7 @@ a {
 
     .sectionBody {
 		@extend .shadow;
-        width: 60%;
+        width: 65%;
         margin: auto;
         background: $color_projects;
         padding-top: 20px;
@@ -311,9 +318,11 @@ a {
     }
 
 	.project {
+		/*
     	padding: 10px;
     	color: $color_black;
     	white-space: normal;
+    	*/
 
     	> h3 {
     		color: $color_black;
@@ -335,7 +344,7 @@ a {
 
 
     }
-
+/*
     .projectNavigation {
     	text-align: center;
 
@@ -350,6 +359,7 @@ a {
 			}
 		}
     }
+    */
 }
 
 #technicalSkills {
@@ -390,6 +400,7 @@ a {
 	.sectionBody {
 		@extend .shadow;
 		width: 80%;
+		/*max-width: 1000px;*/
 		margin: auto;
 		background: $color_light_lime_green;
 
@@ -489,6 +500,114 @@ footer {
 	}
 }
 
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    margin: auto;
+    padding-top: 20px;
+	padding-bottom: 20px;
+
+	ul {
+        width: 1200px;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        float: left;
+        width: 600px;
+    }
+
+
+}
+
+.jcarousel-wrapper {
+    position: relative;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+	@extend .shadow;
+	border-radius: 50%;
+	background: $color_white;
+	color: $color_super_dark_cyan;
+	width: 40px;
+	height: 40px;
+	font-size: 26px;
+
+	z-index: 10;
+	padding-top: 2px;
+	position: absolute;
+	top: 120px;
+
+	&:visited {
+		color: $color_super_dark_cyan;
+	}
+}
+
+.jcarousel-control-prev {
+	left: -20px;
+	padding-left: 8px;
+}
+
+.jcarousel-control-next {
+	right: -20px;
+	padding-left: 13px;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 11px;
+    line-height: 14px;
+    min-width: 14px;
+
+    background: #fff;
+    color: #4E443C;
+    border-radius: 14px;
+    padding: 3px;
+    text-align: center;
+
+    margin-right: 2px;
+
+    opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+
+
+
 /* not in use, but it works so I am not deleting it */
 #background {
 	width: 100%;
@@ -498,3 +617,4 @@ footer {
 	top: 0;
 	z-index: -1;
 }
+

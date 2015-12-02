@@ -5,7 +5,8 @@
   top: 0;
   left: 0; }
 
-.shadow, .arrowButton, #projects .sectionBody .previous, #projects .sectionBody .next, .navbar, #projects .sectionBody, #technicalSkills .bar-shadow, #technicalSkills .sectionBody {
+.shadow, .arrowButton, #projects .sectionBody .previous, #projects .sectionBody .next, .navbar, #projects .sectionBody, #technicalSkills .bar-shadow, #technicalSkills .sectionBody, .jcarousel-control-prev,
+.jcarousel-control-next {
   -webkit-box-shadow: 0 0px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
   /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow: 0 0px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
@@ -87,9 +88,9 @@ a {
       color: #67B913;
       background-color: #EFEFEF; }
   .navbar .navbar-nav .nav-education > a {
-    color: #009D97; }
+    color: #67B913; }
     .navbar .navbar-nav .nav-education > a:hover {
-      color: #009D97;
+      color: #67B913;
       background-color: #EFEFEF; }
   .navbar .navbar-nav .nav-technical > a {
     color: #335c0a; }
@@ -143,6 +144,11 @@ a {
   /* Standard syntax */
   padding-bottom: 100px;
   color: #EFEFEF; }
+  #aboutMe h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+    font-family: Lobster Two, sans-serif; }
   #aboutMe h2 {
     text-align: center;
     font-weight: bold;
@@ -165,12 +171,28 @@ a {
 
 #projects {
   color: #333333;
-  margin-top: -100px; }
+  margin-top: -100px;
+  /*
+      .projectNavigation {
+      	text-align: center;
+  
+      	a {
+  			color: $color_super_dark_cyan;
+  
+  			&:hover {
+  				color: $color_super_dark_cyan;
+  			}
+  			&:visited {
+  				color: $color_super_dark_cyan;
+  			}
+  		}
+      }
+      */ }
   #projects h2 {
     text-align: center;
     color: #000000; }
   #projects .sectionBody {
-    width: 60%;
+    width: 65%;
     margin: auto;
     background: #7EC2AA;
     padding-top: 20px;
@@ -187,9 +209,11 @@ a {
       margin-left: -20px;
       padding-left: 13px; }
   #projects .project {
-    padding: 10px;
-    color: #000000;
-    white-space: normal; }
+    		/*
+        	padding: 10px;
+        	color: $color_black;
+        	white-space: normal;
+        	*/ }
     #projects .project > h3 {
       color: #000000;
       padding-bottom: 10px;
@@ -200,14 +224,6 @@ a {
       #projects .project a:hover {
         color: #333333; }
       #projects .project a:visited {
-        color: #025D59; }
-  #projects .projectNavigation {
-    text-align: center; }
-    #projects .projectNavigation a {
-      color: #025D59; }
-      #projects .projectNavigation a:hover {
-        color: #025D59; }
-      #projects .projectNavigation a:visited {
         color: #025D59; }
 
 #technicalSkills h2 {
@@ -235,6 +251,7 @@ a {
   float: right; }
 #technicalSkills .sectionBody {
   width: 80%;
+  /*max-width: 1000px;*/
   margin: auto;
   background: #c0f38b; }
   #technicalSkills .sectionBody .content {
@@ -260,7 +277,7 @@ a {
 #education {
   color: #333333; }
   #education h2 {
-    color: #009D97; }
+    color: #67B913; }
 
 #contact {
   background: #57102C;
@@ -298,6 +315,86 @@ footer {
       color: #57102C; }
       footer > p > a:visited {
         color: #57102C; }
+
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .jcarousel ul {
+    width: 1200px;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .jcarousel li {
+    float: left;
+    width: 600px; }
+
+.jcarousel-wrapper {
+  position: relative; }
+
+/** Carousel Controls **/
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: #025D59;
+  width: 40px;
+  height: 40px;
+  font-size: 26px;
+  z-index: 10;
+  padding-top: 2px;
+  position: absolute;
+  top: 120px; }
+  .jcarousel-control-prev:visited,
+  .jcarousel-control-next:visited {
+    color: #025D59; }
+
+.jcarousel-control-prev {
+  left: -20px;
+  padding-left: 8px; }
+
+.jcarousel-control-next {
+  right: -20px;
+  padding-left: 13px; }
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+  display: block; }
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+  opacity: .5;
+  cursor: default; }
+
+/** Carousel Pagination **/
+.jcarousel-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 15px; }
+
+.jcarousel-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 14px;
+  min-width: 14px;
+  background: #fff;
+  color: #4E443C;
+  border-radius: 14px;
+  padding: 3px;
+  text-align: center;
+  margin-right: 2px;
+  opacity: .75; }
+
+.jcarousel-pagination a.active {
+  background: #4E443C;
+  color: #fff;
+  opacity: 1;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75); }
 
 /* not in use, but it works so I am not deleting it */
 #background {
