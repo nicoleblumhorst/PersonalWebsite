@@ -30,12 +30,14 @@ $(document).ready(function(){
     $('.jcarousel').width(projectWidth);
     $('.jcarousel>ul').width(projectWidth * 2);
 
+    $('.jcarousel-pagination').children().html('');
+
     $('.jcarousel')
         .jcarousel({
             wrap: 'circular'
         })
         .jcarouselAutoscroll({
-            interval: 3000,
+            interval: 5000,
             target: '+=1',
             autostart: true
         }) ;
@@ -69,7 +71,12 @@ $(document).ready(function(){
         .on('jcarouselpagination:inactive', 'a', function() {
             $(this).removeClass('active');
         })
-        .jcarouselPagination();
+        .jcarouselPagination({
+            perPage: 1,
+            item: function(page) {
+                return '<a href="#' + page + '"></a>';
+            }
+        });
 
 });
 
