@@ -1,21 +1,21 @@
-.fullImage, #projects .project > .image > img, .overlay {
+.fullImage, .overlay {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0; }
 
-.shadow, .arrowButton, #projects .sectionBody .previous, #projects .sectionBody .next, .navbar {
-  -webkit-box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+.shadow, .arrowButton, #projects .sectionBody .previous, #projects .sectionBody .next, .navbar, #projects .sectionBody, #technicalSkills .bar-shadow, #technicalSkills .sectionBody, .jcarousel-control, .jcarousel-control-prev, .jcarousel-control-next {
+  -webkit-box-shadow: 0 0px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
   /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 0px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
   /* Firefox 3.5 - 3.6 */
-  box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+  box-shadow: 0 0px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
 
 .arrowButton, #projects .sectionBody .previous, #projects .sectionBody .next {
   background: #FFFFFF;
-  color: #009D97;
+  color: #025D59;
   width: 40px;
   height: 40px;
   font-size: 26px;
@@ -29,7 +29,8 @@
 body {
   margin: 0;
   font-family: Lato, sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+  background: #EFEFEF; }
 
 h1 {
   padding: 0;
@@ -39,6 +40,10 @@ h2 {
   padding: 0;
   margin: 0;
   font-weight: bold; }
+
+h3 {
+  padding: 0;
+  margin: 0; }
 
 a {
   color: #333333; }
@@ -71,15 +76,25 @@ a {
     .navbar .navbar-nav .nav-about > a:hover {
       color: #AA2159;
       background-color: #EFEFEF; }
+  .navbar .navbar-nav .nav-experience > a {
+    color: #67B913; }
+    .navbar .navbar-nav .nav-experience > a:hover {
+      color: #67B913;
+      background-color: #EFEFEF; }
   .navbar .navbar-nav .nav-work > a {
     color: #67B913; }
     .navbar .navbar-nav .nav-work > a:hover {
       color: #67B913;
       background-color: #EFEFEF; }
   .navbar .navbar-nav .nav-education > a {
-    color: #009D97; }
+    color: #67B913; }
     .navbar .navbar-nav .nav-education > a:hover {
-      color: #009D97;
+      color: #67B913;
+      background-color: #EFEFEF; }
+  .navbar .navbar-nav .nav-technical > a {
+    color: #335c0a; }
+    .navbar .navbar-nav .nav-technical > a:hover {
+      color: #335c0a;
       background-color: #EFEFEF; }
   .navbar .navbar-nav .nav-projects > a {
     color: #7EC2AA; }
@@ -95,13 +110,18 @@ a {
     padding-left: 0px;
     color: #57102C;
     font-size: 30px;
-    font-family: Lobster Two, sans-serif; }
+    font-family: Lobster Two, cursive; }
     .navbar .navbar-brand:hover {
       color: #57102C; }
 
 .section .sectionBody {
   padding-top: 40px;
   padding-bottom: 40px; }
+  .section .sectionBody .headerUnderline {
+    margin: 15px auto 0px auto;
+    background: #000000;
+    height: 4px;
+    width: 80px; }
 .section .content {
   margin: auto;
   width: 60%;
@@ -113,10 +133,26 @@ a {
   padding-left: 24px; }
 
 #aboutMe {
-  background: #AA2159;
+  background: -webkit-linear-gradient(#AA2159, #4A2232);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#AA2159, #4A2232);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#AA2159, #4A2232);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#AA2159, #4A2232);
+  /* Standard syntax */
+  padding-bottom: 100px;
   color: #EFEFEF; }
+  #aboutMe h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+    font-family: Lobster Two, sans-serif; }
   #aboutMe h2 {
-    color: #FFFFFF; }
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Lobster Two, sans-serif; }
   #aboutMe h4 {
     font-weight: bold;
     color: #FFFFFF; }
@@ -133,19 +169,36 @@ a {
     border-radius: 50%; }
 
 #projects {
-  background: #EFEFEF;
   color: #333333;
-  padding-top: 20px; }
+  margin-top: -100px;
+  /*
+      .projectNavigation {
+      	text-align: center;
+  
+      	a {
+  			color: $color_super_dark_cyan;
+  
+  			&:hover {
+  				color: $color_super_dark_cyan;
+  			}
+  			&:visited {
+  				color: $color_super_dark_cyan;
+  			}
+  		}
+      }
+      */ }
   #projects h2 {
     text-align: center;
     color: #000000; }
   #projects .sectionBody {
-    width: 60%;
+    width: 65%;
     margin: auto;
-    background: #7EC2AA; }
+    background: #7EC2AA;
+    padding-top: 20px;
+    padding-bottom: 20px; }
     #projects .sectionBody .content {
       width: 100%;
-      padding-top: 40px;
+      padding-top: 10px;
       padding-left: 20px;
       padding-right: 20px; }
     #projects .sectionBody .previous {
@@ -155,31 +208,75 @@ a {
       margin-left: -20px;
       padding-left: 13px; }
   #projects .project {
-    padding: 10px;
-    color: #000000;
-    background: #009D97; }
-    #projects .project > h4 {
+    		/*
+        	padding: 10px;
+        	color: $color_black;
+        	white-space: normal;
+        	*/ }
+    #projects .project > h3 {
       color: #000000;
-      margin: 0;
       padding-bottom: 10px;
-      width: 100%; }
-    #projects .project > .image {
-      height: 200px;
-      position: relative; }
-    #projects .project .externalLink {
+      text-align: center; }
+    #projects .project a {
+      color: #025D59;
       float: right; }
+      #projects .project a:hover {
+        color: #333333; }
+      #projects .project a:visited {
+        color: #025D59; }
+
+#technicalSkills h2 {
+  padding-left: 40px;
+  width: 100%;
+  color: #335c0a; }
+#technicalSkills h3 {
+  margin-top: 20px;
+  margin-bottom: 5px; }
+#technicalSkills .bar {
+  width: 1%;
+  height: 300px;
+  margin-top: 100px;
+  background: #c0f38b;
+  z-index: -98; }
+#technicalSkills .bar-shadow {
+  width: 10%;
+  height: 300px;
+  margin-top: 100px;
+  background: #c0f38b;
+  z-index: -99; }
+#technicalSkills .bar-left {
+  float: left; }
+#technicalSkills .bar-right {
+  float: right; }
+#technicalSkills .sectionBody {
+  width: 80%;
+  /*max-width: 1000px;*/
+  margin: auto;
+  background: #c0f38b; }
+  #technicalSkills .sectionBody .content {
+    width: 90%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px; }
+
+.skillLabel {
+  margin-left: 20px; }
+
+.skillStrength {
+  color: #335c0a;
+  font-size: 18px;
+  float: right;
+  margin-right: 20px; }
 
 #workExperience {
-  background: #EFEFEF;
   color: #333333; }
   #workExperience h2 {
     color: #67B913; }
 
 #education {
-  background: #EFEFEF;
   color: #333333; }
   #education h2 {
-    color: #009D97; }
+    color: #67B913; }
 
 #contact {
   background: #57102C;
@@ -218,13 +315,77 @@ footer {
       footer > p > a:visited {
         color: #57102C; }
 
-/* not in use, but it works so I am not deleting it */
-#background {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: -1; }
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .jcarousel ul {
+    width: 1200px;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .jcarousel li {
+    float: left;
+    width: 600px; }
+
+.jcarousel-wrapper {
+  position: relative; }
+
+/** Carousel Controls **/
+.jcarousel-control, .jcarousel-control-prev, .jcarousel-control-next {
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: #025D59;
+  width: 40px;
+  height: 40px;
+  font-size: 26px;
+  z-index: 10;
+  padding-top: 2px;
+  position: absolute;
+  top: 120px; }
+  .jcarousel-control:visited, .jcarousel-control-prev:visited, .jcarousel-control-next:visited {
+    color: #025D59; }
+
+.jcarousel-control-prev {
+  left: -20px;
+  padding-left: 8px; }
+  .jcarousel-control-prev:hover span {
+    display: block; }
+  .jcarousel-control-prev.inactive {
+    opacity: .5;
+    cursor: default; }
+
+.jcarousel-control-next {
+  right: -20px;
+  padding-left: 13px; }
+  .jcarousel-control-next:hover span {
+    display: block; }
+  .jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default; }
+
+.jcarousel-pagination {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  bottom: -20px;
+  margin: 0; }
+  .jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid #025D59; }
+    .jcarousel-pagination a.active {
+      color: #009D97;
+      background: #025D59; }
 
 /*# sourceMappingURL=resume.css.map */
