@@ -23,7 +23,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" href="css/resume.css">
+        <link rel="stylesheet" href="css/resume.css" type="text/css" media="screen">
 
         <script src="js/vendor/jquery.jcarousel.min.js" type="text/javascript"></script>
         <script src="js/vendor/jquery.jcarousel-control.min.js" type="text/javascript"></script>
@@ -38,12 +38,22 @@
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="navbar-content">
                 <a class="navbar-brand" href="./">Nicole Blumhorst</a>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-about"><a href="#aboutMe">About Me</a></li>
-                    <li class="nav-projects"><a href="#projects">Projects</a></li>
-                    <li class="nav-experience"><a href="#workExperience">Experience</a></li>
-                    <li class="nav-contact"><a href="#contact">Contact</a></li>
-                </ul>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-about"><a href="#aboutMe">About Me</a></li>
+                        <li class="nav-projects"><a href="#projects">Projects</a></li>
+                        <li class="nav-experience"><a href="#workExperience">Experience</a></li>
+                        <li class="nav-contact"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -57,7 +67,10 @@
 
                     <div class="content">
                         <div class="row">
-                            <div class="content-left col-lg-4 col-md-4 col-sm-4">
+                            <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                                <img class="sm-profile" src="img/profile.jpg">
+                            </div>
+                            <div class="content-left col-lg-4 col-md-4 col-sm-4 hidden-xs">
                                 <h4>Employeer</h4>
                                 <p>Enterprise Holdings</p>
                                 <h4>Current Location</h4>
@@ -65,10 +78,10 @@
                                 <h4>Age</h4>
                                 <p class="age">--</p>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
                                 <img class="profile" src="img/profile.jpg">
                             </div>
-                            <div class="content-right col-lg-4 col-md-4 col-sm-4">
+                            <div class="content-right col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                 <h4>About Me</h4>
                                 <p>I love developing clean, well organized user interfaces (mobile development being my favorite), but
                                     don't mind coding backend projects, too.  When I am not at work I love scouring the internet for new
@@ -93,14 +106,19 @@
                                         <h3>The Trials of Tiresias</h3>
 
                                         <div class="image row">
-                                            <img class="col-md-7" src="img/ammo.png"/>
-                                            <div class="col-md-5">
+                                            <img class="col-md-7 col-xs-12" src="img/ammo.png"/>
+                                            <div class="col-md-5 hidden-xs">
                                                 <p>My senior project team made <i>The Trials of Tiresias</i>
                                                 into a First-Person RPG with missions to teach blind students the programming
                                                 language, Quorum.  We also added an experimental First-Person Shooter aspect
                                                 for blind players.</p>
                                                 <a href="http://sourceforge.net/projects/ammo/" style="margin-top: 20px;">
-                                                Download and Play <i class="fa fa-chevron-right"></i>
+                                                    Download and Play <i class="fa fa-chevron-right"></i>
+                                                </a>
+                                            </div>
+                                            <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                                                <a href="http://sourceforge.net/projects/ammo/" style="margin-top: 5px;">
+                                                    Trials of Tiresias' Website <i class="fa fa-chevron-right"></i>
                                                 </a>
                                             </div>
                                         </div>
@@ -111,7 +129,7 @@
                                         <h3>Quorum's Accessibility Library</h3>
 
                                         <div class="image row">
-                                            <div class="col-md-5">
+                                            <div class="col-md-5 hidden-xs">
                                                 <p>I made two native libraries to catch system notifications for both OS X
                                                 and Windows.  I then set up a new Quorum, a programing language tailored to blind
                                                 students, library that creates a screen reader in as little as 20 lines of code.</p>
@@ -119,7 +137,12 @@
                                                     Checkout Quorum and Sodbeans <i class="fa fa-chevron-right"></i>
                                                 </a>
                                             </div>
-                                            <img class="col-md-7" src="img/quorum.png"/>
+                                            <img class="col-md-7 col-xs-12" src="img/quorum.png"/>
+                                            <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                                                <a href="http://quorumlanguage.com" style="margin-top: 5px;">
+                                                    Quorum's Website<i class="fa fa-chevron-right"></i>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>

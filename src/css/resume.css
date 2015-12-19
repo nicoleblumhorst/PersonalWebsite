@@ -34,7 +34,8 @@ body {
 
 h1 {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-weight: bold; }
 
 h2 {
   padding: 0;
@@ -75,6 +76,8 @@ a {
   .navbar .navbar-content {
     width: 70%;
     margin: auto; }
+  .navbar .navbar-toggle {
+    margin-right: 0px; }
   .navbar .navbar-nav .a {
     font-weight: bold; }
   .navbar .navbar-nav .nav-about > a {
@@ -151,12 +154,10 @@ a {
   color: #EFEFEF; }
   #aboutMe h1 {
     text-align: center;
-    font-weight: bold;
     font-size: 80px;
     font-family: Lobster Two, sans-serif; }
   #aboutMe h2 {
     text-align: center;
-    font-weight: bold;
     font-size: 50px;
     font-family: Lobster Two, sans-serif; }
   #aboutMe h4 {
@@ -170,6 +171,12 @@ a {
   #aboutMe .content {
     padding-top: 0px;
     width: 80%; }
+  #aboutMe .sm-profile {
+    width: 60%;
+    margin: auto;
+    display: block;
+    min-width: 100px;
+    border-radius: 50%; }
   #aboutMe .profile {
     width: 100%;
     border-radius: 50%; }
@@ -324,7 +331,7 @@ footer {
 .jcarousel {
   position: relative;
   overflow: hidden;
-  width: 600px;
+  width: 60%;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px; }
@@ -393,5 +400,27 @@ footer {
     .jcarousel-pagination a.active {
       color: #009D97;
       background: #025D59; }
+
+@media only screen and (max-width: 1200px) {
+  .navbar .navbar-content {
+    width: 90%; } }
+@media only screen and (max-width: 768px) {
+  #aboutMe h1 {
+    font-size: 40px; }
+  #aboutMe h2 {
+    font-size: 30px; }
+  #aboutMe .content-left {
+    text-align: left;
+    padding-top: 0px; }
+  #aboutMe .content-right {
+    padding-top: 0px; }
+
+  #projects h3 {
+    font-size: 20px; }
+  #projects .sectionBody {
+    width: 85%; }
+
+  .jcarousel {
+    width: 85%; } }
 
 /*# sourceMappingURL=resume.css.map */
