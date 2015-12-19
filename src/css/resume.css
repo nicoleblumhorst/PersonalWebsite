@@ -60,6 +60,12 @@ a {
     left: 0;
     z-index: 1; }
 
+.note {
+  font-size: 12px;
+  padding: 20px 40px 0px 40px;
+  margin: 0px;
+  text-align: right; }
+
 .navbar {
   border-radius: 0;
   border: none;
@@ -236,13 +242,13 @@ a {
   width: 1%;
   height: 300px;
   margin-top: 100px;
-  background: #c0f38b;
+  background: #ccf5a3;
   z-index: -98; }
 #technicalSkills .bar-shadow {
   width: 10%;
   height: 300px;
   margin-top: 100px;
-  background: #c0f38b;
+  background: #ccf5a3;
   z-index: -99; }
 #technicalSkills .bar-left {
   float: left; }
@@ -252,7 +258,7 @@ a {
   width: 80%;
   /*max-width: 1000px;*/
   margin: auto;
-  background: #c0f38b; }
+  background: #ccf5a3; }
   #technicalSkills .sectionBody .content {
     width: 90%;
     padding-top: 10px;
@@ -284,12 +290,12 @@ a {
   #contact h2 {
     color: #FFFFFF; }
   #contact .contact {
-    font-size: 20px; }
+    font-size: 20px;
+    padding: 20px; }
     #contact .contact > a {
-      color: #DDDDDD; }
+      color: #FFFFFF; }
       #contact .contact > a > i {
-        color: #FFFFFF;
-        font-size: 24px; }
+        font-size: 70px; }
 
 .overlay {
   padding: 10px;

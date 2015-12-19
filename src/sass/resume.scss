@@ -14,7 +14,7 @@ $color_super_dark_cyan: #025D59;
 $color_light_cyan: #7EC2AA;
 $color_dark_lime_green: #67B913;
 $color_super_dark_lime_green: #335c0a;
-$color_light_lime_green: #c0f38b;
+$color_light_lime_green: #ccf5a3;
 
 $color_about_me: $color_magenta;
 $color_work_experience: $color_dark_lime_green;
@@ -118,6 +118,14 @@ a {
 		left: 0;
 		z-index: 1;
 	}
+}
+
+.note {
+	font-size: 12px;
+	padding: 20px 40px 0px 40px;
+	margin: 0px;
+	text-align: right;
+
 }
 
 .navbar {
@@ -450,14 +458,14 @@ a {
 	}
 
 	.contact {
-
     	font-size: 20px;
+    	padding: 20px;
+
     	> a {
-    	    color: $color_lighter_gray;
+    	    color: $color_white;
 
             > i {
-                color: $color_white;
-                font-size: 24px;
+                font-size: 70px;
             }
     	}
     }
