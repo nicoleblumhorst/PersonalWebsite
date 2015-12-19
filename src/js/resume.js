@@ -25,7 +25,13 @@ $(document).ready(function(){
     });
 
     /* Project Carousel Configurations */
-    var projectWidth =$(window).width() * .6;
+    var projectWidth = $(window).width();
+    if (projectWidth > 768) {
+        projectWidth = projectWidth * .6;
+    } else {
+        projectWidth = projectWidth * .85;
+    }
+
     $('.project').width(projectWidth);
     $('.jcarousel').width(projectWidth);
     $('.jcarousel>ul').width(projectWidth * 2);

@@ -14,7 +14,7 @@ $color_super_dark_cyan: #025D59;
 $color_light_cyan: #7EC2AA;
 $color_dark_lime_green: #67B913;
 $color_super_dark_lime_green: #335c0a;
-$color_light_lime_green: #c0f38b;
+$color_light_lime_green: #ccf5a3;
 
 $color_about_me: $color_magenta;
 $color_work_experience: $color_dark_lime_green;
@@ -85,6 +85,7 @@ body {
 h1 {
 	padding: 0;
 	margin: 0;
+	font-weight: bold;
 }
 
 h2 {
@@ -96,6 +97,7 @@ h2 {
 h3 {
     padding: 0;
 	margin: 0;
+	font-weight: bold;
 }
 
 a {
@@ -120,6 +122,16 @@ a {
 	}
 }
 
+.row-no-margin {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.col-no-padding {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 .navbar {
 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
 	@extend .shadow;
@@ -132,6 +144,10 @@ a {
     .navbar-content {
         width: 70%;
         margin: auto;
+    }
+
+    .navbar-toggle {
+    	margin-right: 0px;
     }
 
 	.navbar-nav {
@@ -243,14 +259,12 @@ a {
 
 	h1 {
 		text-align: center;
-		font-weight: bold;
 		font-size: 80px;
 		font-family: $font_header, $font_sans_serif;
 	}
 
 	h2 {
 		text-align: center;
-		font-weight: bold;
 		font-size: 50px;
 		font-family: $font_header, $font_sans_serif;
 	}
@@ -273,6 +287,14 @@ a {
         padding-top: 0px;
         width: 80%;
     }
+
+	.sm-profile {
+		width: 60%;
+		margin: auto;
+		display: block;
+		min-width: 100px;
+		border-radius: 50%;
+	}
 
 	.profile {
     	width: 100%;
@@ -364,8 +386,7 @@ a {
 
 #technicalSkills {
 	h2 {
-		padding-left: 40px;
-		width: 100%;
+		width: 90%;
 		color: $color_super_dark_lime_green;
 	}
 
@@ -374,12 +395,20 @@ a {
 		margin-bottom: 5px;
 	}
 
-	.bar {
+	.bar-shadow-cover {
 		width: 1%;
 		height: 300px;
 		margin-top: 100px;
 		background: $color_light_lime_green;
 		z-index: -98;
+
+		&.bar-left {
+		    margin-left: -1px;
+		}
+
+		&.bar-right {
+		    margin-right: -1px;
+		}
 	}
 	.bar-shadow {
 		@extend .shadow;
@@ -393,6 +422,7 @@ a {
 	.bar-left {
 		float: left;
 	}
+
 	.bar-right {
 		float: right;
 	}
@@ -410,19 +440,36 @@ a {
 			padding-left: 20px;
 			padding-right: 20px;
 		}
+
+		.row {
+            .content {
+                width: 100%;
+                max-width: 400px;
+                padding-top: 0px;
+            }
+        }
+
+        .skillStrength {
+            color: $color_super_dark_lime_green;
+            font-size: 18px;
+            text-align: right;
+        }
+
+        .skillUnderline {
+            margin: 1px auto 1px auto;
+            background: $color_light_gray;
+            height: 1px;
+            width: 98%;
+        }
+
+        .note {
+            font-size: 12px;
+            margin: 0px;
+            text-align: right;
+        }
 	}
 }
 
-.skillLabel {
-	margin-left: 20px;
-}
-
-.skillStrength {
-	color: $color_super_dark_lime_green;
-	font-size: 18px;
-	float: right;
-	margin-right: 20px;
-}
 
 #workExperience {
 	color: $color_text_dark;
@@ -450,14 +497,13 @@ a {
 	}
 
 	.contact {
+    	padding: 20px;
 
-    	font-size: 20px;
     	> a {
-    	    color: $color_lighter_gray;
+    	    color: $color_white;
 
             > i {
-                color: $color_white;
-                font-size: 24px;
+                font-size: 70px;
             }
     	}
     }
@@ -503,7 +549,7 @@ footer {
 .jcarousel {
     position: relative;
     overflow: hidden;
-    width: 600px;
+    width: 60%;
     margin: auto;
     padding-top: 20px;
 	padding-bottom: 20px;
@@ -603,4 +649,116 @@ footer {
             background: $color_super_dark_cyan;
         }
     }
+}
+
+@media only screen and (max-width: 1200px) {
+	.navbar {
+		.navbar-content {
+			width: 95%;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+    .section {
+        .content {
+            width: 90%;
+        }
+
+        h2 {
+            width: 95%;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        h5 {
+            font-size: 14px;
+        }
+
+        p, li, span {
+            font-size: 14px;
+        }
+    }
+
+	#aboutMe {
+		h1 {
+			font-size: 40px;
+		}
+
+		h2 {
+			font-size: 30px;
+		}
+
+		.content-left {
+			text-align: left;
+			padding-top: 0px;
+		}
+
+		.content-right {
+			padding-top: 0px;
+		}
+	}
+
+	#projects {
+        h3 {
+            font-size: 20px;
+        }
+		.sectionBody {
+        	width: 85%;
+		}
+	}
+
+    #technicalSkills {
+
+        .bar-shadow {
+    		width: 5%;
+        }
+
+    	.sectionBody {
+    		width: 90%;
+    		font-size: 16px;
+
+    		.content {
+    			width: 95%;
+    			padding-left: 0px;
+    			padding-right: 0px;
+    		}
+    	}
+
+    	.note {
+            font-size: 10px;
+        }
+    }
+
+    #contact {
+    	background: $color_contact;
+    	color: $color_text_light;
+
+    	h2 {
+    		color: $color_header_light;
+    	}
+
+    	.contact {
+        	padding: 20px;
+
+        	> a {
+        	    color: $color_white;
+
+                > i {
+                    font-size: 70px;
+                }
+        	}
+        }
+    }
+
+	.jcarousel {
+        width: 85%;
+	}
 }
