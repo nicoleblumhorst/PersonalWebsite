@@ -122,6 +122,16 @@ a {
 	}
 }
 
+.row-no-margin {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.col-no-padding {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 .navbar {
 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
 	@extend .shadow;
@@ -487,7 +497,6 @@ a {
 	}
 
 	.contact {
-    	font-size: 20px;
     	padding: 20px;
 
     	> a {
@@ -718,13 +727,34 @@ footer {
 
     		.content {
     			width: 95%;
-    			padding-left: 10px;
-    			padding-right: 10px;
+    			padding-left: 0px;
+    			padding-right: 0px;
     		}
     	}
 
     	.note {
             font-size: 10px;
+        }
+    }
+
+    #contact {
+    	background: $color_contact;
+    	color: $color_text_light;
+
+    	h2 {
+    		color: $color_header_light;
+    	}
+
+    	.contact {
+        	padding: 20px;
+
+        	> a {
+        	    color: $color_white;
+
+                > i {
+                    font-size: 70px;
+                }
+        	}
         }
     }
 

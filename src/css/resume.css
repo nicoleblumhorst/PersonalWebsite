@@ -62,6 +62,14 @@ a {
     left: 0;
     z-index: 1; }
 
+.row-no-margin {
+  margin-right: 0px;
+  margin-left: 0px; }
+
+.col-no-padding {
+  padding-right: 0px;
+  padding-left: 0px; }
+
 .navbar {
   border-radius: 0;
   border: none;
@@ -303,7 +311,6 @@ a {
   #contact h2 {
     color: #FFFFFF; }
   #contact .contact {
-    font-size: 20px;
     padding: 20px; }
     #contact .contact > a {
       color: #FFFFFF; }
@@ -446,10 +453,22 @@ footer {
     font-size: 16px; }
     #technicalSkills .sectionBody .content {
       width: 95%;
-      padding-left: 10px;
-      padding-right: 10px; }
+      padding-left: 0px;
+      padding-right: 0px; }
   #technicalSkills .note {
     font-size: 10px; }
+
+  #contact {
+    background: #57102C;
+    color: #EFEFEF; }
+    #contact h2 {
+      color: #FFFFFF; }
+    #contact .contact {
+      padding: 20px; }
+      #contact .contact > a {
+        color: #FFFFFF; }
+        #contact .contact > a > i {
+          font-size: 70px; }
 
   .jcarousel {
     width: 85%; } }
