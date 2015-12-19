@@ -122,14 +122,6 @@ a {
 	}
 }
 
-.note {
-	font-size: 12px;
-	padding: 20px 40px 0px 40px;
-	margin: 0px;
-	text-align: right;
-
-}
-
 .navbar {
 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
 	@extend .shadow;
@@ -384,8 +376,7 @@ a {
 
 #technicalSkills {
 	h2 {
-		padding-left: 40px;
-		width: 100%;
+		width: 90%;
 		color: $color_super_dark_lime_green;
 	}
 
@@ -394,12 +385,20 @@ a {
 		margin-bottom: 5px;
 	}
 
-	.bar {
+	.bar-shadow-cover {
 		width: 1%;
 		height: 300px;
 		margin-top: 100px;
 		background: $color_light_lime_green;
 		z-index: -98;
+
+		&.bar-left {
+		    margin-left: -1px;
+		}
+
+		&.bar-right {
+		    margin-right: -1px;
+		}
 	}
 	.bar-shadow {
 		@extend .shadow;
@@ -413,6 +412,7 @@ a {
 	.bar-left {
 		float: left;
 	}
+
 	.bar-right {
 		float: right;
 	}
@@ -430,19 +430,36 @@ a {
 			padding-left: 20px;
 			padding-right: 20px;
 		}
+
+		.row {
+            .content {
+                width: 100%;
+                max-width: 400px;
+                padding-top: 0px;
+            }
+        }
+
+        .skillStrength {
+            color: $color_super_dark_lime_green;
+            font-size: 18px;
+            text-align: right;
+        }
+
+        .skillUnderline {
+            margin: 1px auto 1px auto;
+            background: $color_light_gray;
+            height: 1px;
+            width: 98%;
+        }
+
+        .note {
+            font-size: 12px;
+            margin: 0px;
+            text-align: right;
+        }
 	}
 }
 
-.skillLabel {
-	margin-left: 20px;
-}
-
-.skillStrength {
-	color: $color_super_dark_lime_green;
-	font-size: 18px;
-	float: right;
-	margin-right: 20px;
-}
 
 #workExperience {
 	color: $color_text_dark;
@@ -628,7 +645,7 @@ footer {
 @media only screen and (max-width: 1200px) {
 	.navbar {
 		.navbar-content {
-			width: 90%;
+			width: 95%;
 		}
 	}
 }
@@ -636,18 +653,12 @@ footer {
 @media only screen and (max-width: 768px) {
 
     .section {
-
         .content {
             width: 90%;
         }
 
         h2 {
             width: 95%;
-        }
-
-        h3 {
-            font-size: 20px;
-
         }
 
         h3 {
@@ -662,7 +673,7 @@ footer {
             font-size: 14px;
         }
 
-        p, li {
+        p, li, span {
             font-size: 14px;
         }
     }
@@ -695,7 +706,27 @@ footer {
 		}
 	}
 
+    #technicalSkills {
 
+        .bar-shadow {
+    		width: 5%;
+        }
+
+    	.sectionBody {
+    		width: 90%;
+    		font-size: 16px;
+
+    		.content {
+    			width: 95%;
+    			padding-left: 10px;
+    			padding-right: 10px;
+    		}
+    	}
+
+    	.note {
+            font-size: 10px;
+        }
+    }
 
 	.jcarousel {
         width: 85%;

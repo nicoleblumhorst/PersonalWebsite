@@ -62,12 +62,6 @@ a {
     left: 0;
     z-index: 1; }
 
-.note {
-  font-size: 12px;
-  padding: 20px 40px 0px 40px;
-  margin: 0px;
-  text-align: right; }
-
 .navbar {
   border-radius: 0;
   border: none;
@@ -240,18 +234,21 @@ a {
         color: #025D59; }
 
 #technicalSkills h2 {
-  padding-left: 40px;
-  width: 100%;
+  width: 90%;
   color: #335c0a; }
 #technicalSkills h3 {
   margin-top: 20px;
   margin-bottom: 5px; }
-#technicalSkills .bar {
+#technicalSkills .bar-shadow-cover {
   width: 1%;
   height: 300px;
   margin-top: 100px;
   background: #ccf5a3;
   z-index: -98; }
+  #technicalSkills .bar-shadow-cover.bar-left {
+    margin-left: -1px; }
+  #technicalSkills .bar-shadow-cover.bar-right {
+    margin-right: -1px; }
 #technicalSkills .bar-shadow {
   width: 10%;
   height: 300px;
@@ -272,15 +269,23 @@ a {
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px; }
-
-.skillLabel {
-  margin-left: 20px; }
-
-.skillStrength {
-  color: #335c0a;
-  font-size: 18px;
-  float: right;
-  margin-right: 20px; }
+  #technicalSkills .sectionBody .row .content {
+    width: 100%;
+    max-width: 400px;
+    padding-top: 0px; }
+  #technicalSkills .sectionBody .skillStrength {
+    color: #335c0a;
+    font-size: 18px;
+    text-align: right; }
+  #technicalSkills .sectionBody .skillUnderline {
+    margin: 1px auto 1px auto;
+    background: #AAAAAA;
+    height: 1px;
+    width: 98%; }
+  #technicalSkills .sectionBody .note {
+    font-size: 12px;
+    margin: 0px;
+    text-align: right; }
 
 #workExperience {
   color: #333333; }
@@ -404,7 +409,7 @@ footer {
 
 @media only screen and (max-width: 1200px) {
   .navbar .navbar-content {
-    width: 90%; } }
+    width: 95%; } }
 @media only screen and (max-width: 768px) {
   .section .content {
     width: 90%; }
@@ -412,13 +417,11 @@ footer {
     width: 95%; }
   .section h3 {
     font-size: 20px; }
-  .section h3 {
-    font-size: 20px; }
   .section h4 {
     font-size: 16px; }
   .section h5 {
     font-size: 14px; }
-  .section p, .section li {
+  .section p, .section li, .section span {
     font-size: 14px; }
 
   #aboutMe h1 {
@@ -435,6 +438,18 @@ footer {
     font-size: 20px; }
   #projects .sectionBody {
     width: 85%; }
+
+  #technicalSkills .bar-shadow {
+    width: 5%; }
+  #technicalSkills .sectionBody {
+    width: 90%;
+    font-size: 16px; }
+    #technicalSkills .sectionBody .content {
+      width: 95%;
+      padding-left: 10px;
+      padding-right: 10px; }
+  #technicalSkills .note {
+    font-size: 10px; }
 
   .jcarousel {
     width: 85%; } }
