@@ -44,7 +44,8 @@ h2 {
 
 h3 {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-weight: bold; }
 
 a {
   color: #333333; }
@@ -405,6 +406,21 @@ footer {
   .navbar .navbar-content {
     width: 90%; } }
 @media only screen and (max-width: 768px) {
+  .section .content {
+    width: 90%; }
+  .section h2 {
+    width: 95%; }
+  .section h3 {
+    font-size: 20px; }
+  .section h3 {
+    font-size: 20px; }
+  .section h4 {
+    font-size: 16px; }
+  .section h5 {
+    font-size: 14px; }
+  .section p, .section li {
+    font-size: 14px; }
+
   #aboutMe h1 {
     font-size: 40px; }
   #aboutMe h2 {

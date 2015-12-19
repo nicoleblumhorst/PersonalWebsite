@@ -97,6 +97,7 @@ h2 {
 h3 {
     padding: 0;
 	margin: 0;
+	font-weight: bold;
 }
 
 a {
@@ -634,6 +635,38 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
+    .section {
+
+        .content {
+            width: 90%;
+        }
+
+        h2 {
+            width: 95%;
+        }
+
+        h3 {
+            font-size: 20px;
+
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        h5 {
+            font-size: 14px;
+        }
+
+        p, li {
+            font-size: 14px;
+        }
+    }
+
 	#aboutMe {
 		h1 {
 			font-size: 40px;
@@ -661,6 +694,8 @@ footer {
         	width: 85%;
 		}
 	}
+
+
 
 	.jcarousel {
         width: 85%;
