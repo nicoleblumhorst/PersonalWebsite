@@ -311,6 +311,15 @@ a {
 		color: $color_header_dark;
 	}
 
+    .project-link {
+        margin-top: 20px;
+    }
+
+    .project-link-sm {
+        margin-top: 5px;
+        padding-right: 5px;
+    }
+
     .sectionBody {
 		@extend .shadow;
         width: 65%;
@@ -340,11 +349,6 @@ a {
     }
 
 	.project {
-		/*
-    	padding: 10px;
-    	color: $color_black;
-    	white-space: normal;
-    	*/
 
     	> h3 {
     		color: $color_black;
@@ -730,6 +734,12 @@ footer {
     			padding-left: 0px;
     			padding-right: 0px;
     		}
+
+    		.row {
+                .content {
+                    width: 95%;
+                }
+            }
     	}
 
     	.note {
