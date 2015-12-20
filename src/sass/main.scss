@@ -31,12 +31,6 @@ header {
     color: white;
 }
 
-.nav {
-    float: left;
-    margin-top: -72px;
-    padding-left: 50px;
-}
-
 .button, .button:visited {
     font-size: 20px;
     border:  2px solid #333333 !important;
@@ -76,5 +70,38 @@ header {
     .jobTitle {
         padding-bottom: 20px;
     }
+
+    .nav {
+        float: left;
+        margin-top: -72px;
+        padding-left: 50px;
+    }
 }
 
+@media only screen and (max-width: 768px) {
+
+    .bannerContainer {
+        margin-top: 100px;
+        padding: 0px;
+        float: left;
+
+        .name {
+            text-align: center;
+        }
+
+        .jobTitle {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .nav {
+            text-align: center;
+            float: none;
+            margin-top: 0px;
+            padding-left: 0px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+    }
+
+}
