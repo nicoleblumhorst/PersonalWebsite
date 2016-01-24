@@ -1,27 +1,28 @@
 {
   "threatLevel": "GUARDED",
-  "story": {
+  "stories": [
+  {
     "headline": "Defense: Slain father was violent, obsessed with zombies",
     "byline": "",
     "date": "2016-01-21T00:00:00.000Z",
     "credits": "FOX News",
-    "articleHighlight": "COEUR D'ALENE, Idaho –  Eldon Samuel Jr. was a violent man who was hooked on prescription drugs, owned numerous weapons and was preparing his sons for a zombie apocalypse, his estranged wife Tina Samuel told the court Wednesday."
+    "articleHighlight": "COEUR D'ALENE, Idaho \- Eldon Samuel Jr. was a violent man who was hooked on prescription drugs, owned numerous weapons and was preparing his sons for a zombie apocalypse, his estranged wife Tina Samuel told the court Wednesday.",
     "url": "http://www.foxnews.com/us/2016/01/21/defense-slain-father-was-violent-obsessed-with-zombies.html"
-  }
-  "story": {
+  },
+  {
     "headline": "N.M. man brutally kills buddy after binge-watching 'The Walking Dead' because he believed pal had turned into zombie",
     "byline": "David Boroff",
     "date": "2015-10-27T00:00:00.000Z",
     "credits": "Daily News",
-    "articleHighlight": "A New Mexico man brutally killed his buddy after binge-watching "The Walking Dead" because he believed his friend had transformed into a zombie, he told cops."
+    "articleHighlight": "A New Mexico man brutally killed his buddy after binge-watching \"The Walking Dead\" because he believed his friend had transformed into a zombie, he told cops.",
     "url": "http://www.nydailynews.com/news/crime/n-m-man-kills-friend-thought-zombie-cops-article-1.2411838"
-  }
-  "story": {
-    "headline": "These ‘zombie’ bees make the flight of the living dead",
+  },
+  {
+    "headline": "These \‘zombie\’ bees make the flight of the living dead",
     "byline": "Rachel Feltman",
     "date": "2015-10-09T00:00:00.000Z",
     "credits": "The Washington Post",
-    "articleHighlight": "The bees in the above video aren't dead, but they're about as zombified as bees could be. They're suffering from just one of the many ailments putting honey bee colonies under pressure: a devastating parasite."
+    "articleHighlight": "The bees in the above video aren't dead, but they're about as zombified as bees could be. They're suffering from just one of the many ailments putting honey bee colonies under pressure: a devastating parasite.",
     "url": "https://www.washingtonpost.com/news/speaking-of-science/wp/2015/10/09/these-zombie-bees-make-the-flight-of-the-living-dead/"
-  }
+  }]
 }
