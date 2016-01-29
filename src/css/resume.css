@@ -289,10 +289,10 @@ a {
     background: #AAAAAA;
     height: 1px;
     width: 98%; }
-  #technicalSkills .sectionBody .note {
-    font-size: 12px;
-    margin: 0px;
-    text-align: right; }
+
+.note {
+  font-size: 12px;
+  margin: 0px; }
 
 #workExperience {
   color: #333333; }
@@ -456,8 +456,6 @@ footer {
       padding-right: 0px; }
     #technicalSkills .sectionBody .row .content {
       width: 95%; }
-  #technicalSkills .note {
-    font-size: 10px; }
 
   #contact {
     background: #57102C;
@@ -470,6 +468,9 @@ footer {
         color: #FFFFFF; }
         #contact .contact > a > i {
           font-size: 70px; }
+
+  .note {
+    font-size: 10px; }
 
   .jcarousel {
     width: 85%; } }

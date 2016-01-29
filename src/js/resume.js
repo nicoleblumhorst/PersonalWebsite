@@ -34,7 +34,7 @@ $(document).ready(function(){
 
     $('.project').width(projectWidth);
     $('.jcarousel').width(projectWidth);
-    $('.jcarousel>ul').width(projectWidth * 2);
+    $('.jcarousel>ul').width(projectWidth * $('.project').size());
 
     $('.jcarousel-pagination').children().html('');
 
@@ -43,7 +43,7 @@ $(document).ready(function(){
             wrap: 'circular'
         })
         .jcarouselAutoscroll({
-            interval: 5000,
+            interval: 10000,
             target: '+=1',
             autostart: true
         }) ;
