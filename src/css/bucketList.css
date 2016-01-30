@@ -1,0 +1,45 @@
+html {
+  height: 100%; }
+
+body {
+  color: white;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  background: #3B7E9E; }
+
+ul {
+  padding-left: 0px;
+  list-style-type: none; }
+
+a {
+  color: #C7C7C7; }
+  a:hover, a:focus {
+    color: #D4D4D4;
+    text-decoration: none; }
+
+.content {
+  margin: auto;
+  width: 60%; }
+
+.done {
+  text-decoration: line-through;
+  color: #EFEFEF; }
+
+.back {
+  float: left;
+  margin-left: 20px; }
+
+.proof {
+  padding: 40px; }
+  .proof p {
+    text-align: left; }
+  .proof .instagram-media {
+    margin-left: auto !important;
+    margin-right: auto !important; }
+
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 100%; } }
+
+/*# sourceMappingURL=bucketList.css.map */
