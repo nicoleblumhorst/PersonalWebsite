@@ -71,10 +71,10 @@ a {
     padding: 40px;
 
     a {
-        color: $color_primary_text;
+        color: $color_primary;
 
         &:hover, &:focus {
-            color: $color_primary_light_text;
+            color: $color_primary;
             text-decoration: none;
         }
     }

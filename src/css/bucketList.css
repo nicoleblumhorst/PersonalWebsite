@@ -43,9 +43,9 @@ a {
   color: black;
   padding: 40px; }
   .proof a {
-    color: #FFFFFF; }
+    color: #FF444F; }
     .proof a:hover, .proof a:focus {
-      color: #AAAAAA;
+      color: #FF444F;
       text-decoration: none; }
   .proof .image-container {
     max-width: 500px;
