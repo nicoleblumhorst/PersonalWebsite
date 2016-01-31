@@ -2,20 +2,29 @@ html {
   height: 100%; }
 
 body {
-  color: white;
+  background: #FF444F;
+  color: #FFFFFF;
   height: 100%;
   margin: 0;
   text-align: center;
-  background: #3B7E9E; }
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 18px; }
+
+h1 {
+  color: #6AD3E8;
+  font-family: Droid Sans, cursive;
+  font-weight: 700;
+  font-size: 5vw; }
 
 ul {
   padding-left: 0px;
   list-style-type: none; }
 
 a {
-  color: #C7C7C7; }
+  color: #FFFFFF; }
   a:hover, a:focus {
-    color: #D4D4D4;
+    color: #AAAAAA;
     text-decoration: none; }
 
 .content {
@@ -31,9 +40,32 @@ a {
   margin-left: 20px; }
 
 .proof {
+  color: black;
   padding: 40px; }
+  .proof a {
+    color: #FFFFFF; }
+    .proof a:hover, .proof a:focus {
+      color: #AAAAAA;
+      text-decoration: none; }
+  .proof .image-container {
+    max-width: 500px;
+    padding: 8px;
+    background: white;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0 0px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 0 0px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+    box-shadow: 0 0px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4); }
+    .proof .image-container img {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      margin-bottom: 10px; }
   .proof p {
     text-align: left; }
+  .proof .date {
+    color: #999999; }
   .proof .instagram-media {
     margin-left: auto !important;
     margin-right: auto !important; }
