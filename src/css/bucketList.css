@@ -70,6 +70,20 @@ a {
     margin-left: auto !important;
     margin-right: auto !important; }
 
+.badass-button {
+  padding: 15px 27px;
+  font-size: 17px;
+  display: inline-block;
+  background-color: #f66049;
+  color: white;
+  border-radius: 5px;
+  padding: 20px 50px;
+  font-size: 22px;
+  box-shadow: 0px -3px 0px rgba(0, 0, 0, 0.2) inset;
+  font-family: BrandonGrotesqueBlack, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase; }
+
 @media only screen and (max-width: 768px) {
   .content {
     width: 100%; } }
