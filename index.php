@@ -1,1 +1,1 @@
-<?php header( 'Location: /src/bucketlist/index.html' ) ;  ?>
+<?php header( 'Location: /src/index.html' ) ;  ?>
