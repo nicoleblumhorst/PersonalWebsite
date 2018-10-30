@@ -9,7 +9,7 @@ run Proc.new { |env|
       'Content-Type'  => 'text/html', 
       'Cache-Control' => 'public, max-age=6400' 
     },
-    File.open( 'public' + env['PATH_INFO'], File::RDONLY)
+    File.open( 'public' + env['PATH_INFO'] + '.html', File::RDONLY)
   ]
 }
 
