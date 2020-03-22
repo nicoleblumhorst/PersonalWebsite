@@ -1,0 +1,27 @@
+
+h1 {
+    color: #6AD3E8;
+    font-family: Droid Sans, cursive;
+    font-weight: 700;
+    font-size: 5vw; 
+    padding-top: 20px;
+}
+  
+ul {
+    padding-left: 0px;
+    list-style-type: none; 
+}
+  
+a {
+    color: #FFFFFF; 
+    &:hover, &:focus {
+        color: #AAAAAA;
+        text-decoration: none; 
+    }
+}
+  
+.done {
+    text-decoration: line-through;
+    color: #EFEFEF; 
+}
+  
