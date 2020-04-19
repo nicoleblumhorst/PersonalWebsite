@@ -1,0 +1,17 @@
+<div id="education" class="section">
+    <div class="sectionBody">
+        <h2 class="header">Education</h2>
+        <div class="education">
+          <div *ngFor="let degree of education">
+            <div>
+              <h3>{{degree.degree}} ({{degree.date}})</h3>
+              <h4>{{degree.school}}</h4>
+              <p *ngIf="degree.minor">Minor in {{degree.minor}}</p>
+              <p>Cumulative GPA: {{degree.gpa}}</p>
+              <p *ngIf="degree.programGpa">Program GPA: {{degree.programGpa}}</p>
+            </div>
+            <hr>
+          </div>
+        </div>
+    </div>
+</div>

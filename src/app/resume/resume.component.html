@@ -1,0 +1,24 @@
+<app-about-me></app-about-me>
+<app-contact></app-contact>
+<app-projects [projects]="resume?.projects"></app-projects>
+<app-skills [skills]="resume?.skills"></app-skills>
+<app-work [work]="resume?.work"></app-work>
+<app-education [education]="resume?.education"></app-education>
+
+
+<footer>
+  <p>Thanks for visiting my website!</p>
+  <div>
+    <a class="footerLink" href="https://www.linkedin.com/in/nicoleblumhorst">
+      <i class="fa fa-linkedin-square"></i>
+    </a>
+    <a class="footerLink" href="https://github.com/nicoleblumhorst">
+      <i class="fa fa-github"></i>
+    </a>
+    <a class="footerLink" href="mailto:nicoleblumhorst@gmail.com">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </div>
+  <p><a href="https://github.com/nicoleblumhorst/PersonalWebsite">Here is the repository</a> for this website if you would like to check out the code.</p>
+  <p>This website is built using <a href="http://angular.io">Angular</a>, hosted with <a href="http://firebase.google.com">Firebase</a>, and uses <a href="http://fontawesome.io">Font Awesome by Dave Gandy</a></p>
+</footer>

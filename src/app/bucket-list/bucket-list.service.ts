@@ -16,6 +16,10 @@ import {Task} from './models/task';
       return this.list;
     }
 
+    getBucketListItem(index: number): Task {
+      return this.list[index];
+    }
+
     private generateBucketList() {
       this.list.push(new Task('Write a full length story', false));
       this.list.push(new Task('Make a YouTube video', false));
@@ -44,5 +48,6 @@ import {Task} from './models/task';
       this.list.push(new Task('Bike across a state (such as RAGBRAI or BAM)', false));
       this.list.push(new Task('Donate blood', false));
       this.list.push(new Task('Pull down my shorts and slide on the ice', false));
+      this.list.push(new Task('Wear a diaper', true));
     }
   }

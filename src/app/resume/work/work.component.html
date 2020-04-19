@@ -1,0 +1,16 @@
+<div class="sectionBody">
+  <h2 class="header">Work Experience</h2>
+  <div class="work-experience">
+    <div *ngFor="let job of work">
+      <div>
+        <h3>{{job.company}}</h3>
+        <p>{{job.title}}</p>
+        <p>{{job.start}} - {{job.end}}</p>
+        <ul>
+          <li *ngFor="let responsibility of job.responsibilities">{{responsibility}}</li>
+        </ul>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>

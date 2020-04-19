@@ -1,0 +1,198 @@
+{
+  "skills" : [
+    {
+      "name": "Languages",
+      "skills": [
+        {
+          "name": "Typescript",
+          "comfort": 5
+        },
+        {
+          "name": "Java",
+          "comfort": 5
+        },
+        {
+          "name": "SASS/CSS",
+          "comfort": 5
+        },
+        {
+          "name": "HTML 5",
+          "comfort": 5
+        },
+        {
+          "name": "Javascript",
+          "comfort": 4
+        },
+        {
+          "name": "Objective C",
+          "comfort": 3
+        },
+        {
+          "name": "C++",
+          "comfort": 3
+        },
+        {
+          "name": "Visual Basic",
+          "comfort": 3
+        }]
+    },
+    {
+      "name": "Frameworks",
+      "skills": [
+        {
+          "name": "Angular",
+          "comfort": 5
+        },
+        {
+          "name": "Android",
+          "comfort": 5
+        },
+        {
+          "name": "Angular Material",
+          "comfort": 5
+        },
+        {
+          "name": "Spring Boot",
+          "comfort": 2
+        },
+        {
+          "name": "Spring MVC",
+          "comfort": 2
+        }]
+    },
+    {
+      "name": "Tools",
+      "skills": [
+        {
+          "name": "Git",
+          "comfort": 5
+        },
+        {
+          "name": "Intelli J",
+          "comfort": 5
+        },
+        {
+          "name": "WebStorm",
+          "comfort": 5
+        },
+        {
+          "name": "Confluence",
+          "comfort": 4
+        },
+        {
+          "name": "Bitbucket",
+          "comfort": 4
+        },
+        {
+          "name": "Jira",
+          "comfort": 4
+        },
+        {
+          "name": "Splunk",
+          "comfort": 4
+        },
+        {
+          "name": "AWS",
+          "comfort": 3
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "WFTDA Penalty Flash Cards",
+      "description": "I recently started playing roller derby and until I'm good enough to play in a game, I have to keep track of the penalties during games. Learning all of the hand signals and how to map it to what we needed to document was tricky, so one of my teammates made a classic set of flash cards and let me borrow them. When I forgot to bring them back at the next practice, I told her I would make an online version for her to make up for it, so this is what came out of that.",
+      "image": "flash-card.png",
+      "link": "https://penalty-flash-cards.firebaseapp.com/",
+      "linkText": "Test your penalty knowledge here.",
+      "sideNote": "WFTDA = Women's Flat Track Derby Association.  And I skate with the St. Chux Derby Chix league."
+    },
+    {
+      "name": "State of EmergenZ",
+      "description": "Have you ever thought to yourself, “If the zombie apocalypse startedright now, how would I find out about it?” Well, I made this app to help all of us that are worried about this sleep a little easier. The app displays the “Threat Level” as well as recent news articles about the impending apocalypse.  Right now, I have only built an app for Android.",
+      "image": "severe.png",
+      "link": "https://github.com/nicoleblumhorst/State-of-EmergenZ",
+      "linkText": "See the code here.",
+      "sideNote": "I don't actually think there will be a zombie apocalypse, but it was a fun concept to play around with."
+    },
+    {
+      "name": "The Trials of Tiresias",
+      "description": "My senior project team built onto 'The Trials of Tiresias', a First-Person RPG with mini-missions to teach students the programming language, Quorum.  We also added an experimental First-Person Shooter aspect to the game in hopes of making it more accessible for blind students.",
+      "image": "ammo.png",
+      "link": "http://sourceforge.net/projects/ammo/",
+      "linkText": "Find out more about the game here."
+    },
+    {
+      "name": "Quorum's Accessibility Library",
+      "description": "I made two native libraries to catch system notifications for both OS X and Windows.  I then set up a new Quorum, a programing language tailored to blind students, library that creates a screen reader in as little as 20 lines of code.",
+      "image": "quorum.png",
+      "link": "http://quorumlanguage.com",
+      "linkText": "Learn more about Quorum here.",
+      "sideNote": "This language/library has drastically changed since I've worked on it, but I still love the idea and wanted to highlight the language."
+    }
+  ],
+  "work": [
+    {
+      "company": "Enterprise Holdings",
+      "title": "Software Engineer 3",
+      "start": "January 2014 ",
+      "end": "present",
+      "responsibilities": [
+        "Contributing to building and maintaining multiple applications, for both Android and iOS tablets.",
+        "Building, maintaining and enhancing RESTful services for iOS, Android and web applications.",
+        "Minor enhancements and bug fixes for backend services, built with Hibernate."
+      ]
+    },
+    {
+      "company": "FASTechnology Group",
+      "title": "Systems Development Engineering Intern",
+      "start": "May 2013 ",
+      "end": "December 2013",
+      "responsibilities": [
+        "Troubleshot minor program bugs and added requested features to existing software written in Visual Basic."
+      ]
+    },
+    {
+      "company": "National Science Foundation Research Experience for Undergraduates Program",
+      "title": "Southern Illinois University at Edwardsville under Dr. Andreas Stefik",
+      "start": "May 2013 ",
+      "end": "December 2013",
+      "responsibilities": [
+        "Continued previous work on creating a screen reading library for the programming language Quorum, to run on both Windows and Mac operating systems.",
+        "Added braille support to the Sodbeans IDE, a NetBeans module suite with enhanced accessibility for the blind.",
+        "Helped create programming curriculum used in schools for the blind across the United States."
+      ]
+    },
+    {
+      "company": "Undergraduate Research and Creative Activities Program",
+      "title": "Southern Illinois University at Edwardsville under Dr. Andreas Stefik",
+      "start": "August 2012",
+      "end": "December 2012",
+      "responsibilities": [
+        "Continued work on creating a screen reading library, for the programming language Quorum, to run on both Windows and Mac operating systems."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelors of Science in Computer Science",
+      "minor": "Mathematics",
+      "date": "December 2013",
+      "school":"Southern Illinois University at Edwardsville, IL",
+      "programGpa": "3.88/4.0",
+      "gpa": "3.7/4.0"
+    },
+    {
+      "degree": "Associates of Science with high honors",
+      "date": "August 2010",
+      "school":"Lincoln Land Community College in Springfield, IL",
+      "gpa": "3.83/4.0"
+    },
+    {
+      "degree": "High School Diploma",
+      "date": "May 2009",
+      "school":"Rochester High School in Rochester, IL",
+      "gpa": "4.5/weighted 4.0"
+    }
+  ]
+}

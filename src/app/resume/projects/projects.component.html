@@ -1,0 +1,18 @@
+<div class="projects">
+  <h2 class="header">My Projects</h2>
+
+  <div class="content">
+    <button mat-icon-button color="accent" (click)="back()">
+      <mat-icon>keyboard_arrow_left</mat-icon>
+    </button>
+    <div class="project">
+      <h4>{{currentProject?.name}}</h4>
+      <p>{{currentProject?.description}} <a [href]="currentProject?.link" class="project-link">{{ currentProject?.linkText}}</a></p>
+      <img [src]="buildImageAssetLink(currentProject?.image)">
+      <p class="side-note">{{currentProject?.sideNote}}</p>
+    </div>
+    <button mat-icon-button color="accent" (click)="next()">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+  </div>
+</div>

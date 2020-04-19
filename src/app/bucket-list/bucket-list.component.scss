@@ -1,10 +1,9 @@
 
 h1 {
-    color: #6AD3E8;
-    font-family: Droid Sans, cursive;
-    font-weight: 700;
-    font-size: 5vw; 
-    padding-top: 20px;
+    color: #ffffff;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: xx-large;
+    margin-top: 20px;
 }
   
 ul {
@@ -13,7 +12,6 @@ ul {
 }
   
 a {
-    color: #FFFFFF; 
     &:hover, &:focus {
         color: #AAAAAA;
         text-decoration: none; 
@@ -22,6 +20,6 @@ a {
   
 .done {
     text-decoration: line-through;
-    color: #EFEFEF; 
+    color: #EEEEEE; 
 }
   

@@ -1,0 +1,18 @@
+<div>
+  <h2>Technical Skills</h2>
+
+  <div class="skills">
+    <div *ngFor="let section of skills" class="skillSection">
+      <h3>{{section.name}}</h3>
+      <div *ngFor="let skill of section.skills">
+        <label>{{skill.name}}</label>
+        <i *ngIf="skill.comfort >= 1" class="fa fa-star"></i>
+        <i *ngIf="skill.comfort >= 2" class="fa fa-star"></i>
+        <i *ngIf="skill.comfort >= 3" class="fa fa-star"></i>
+        <i *ngIf="skill.comfort >= 4" class="fa fa-star"></i>
+        <i *ngIf="skill.comfort >= 5" class="fa fa-star"></i>
+      </div>
+    </div>
+  </div>
+  <p class="note">*These rankings are meant to represent my knowledge and confidence with the technology compared to others I have used.</p>
+</div>
