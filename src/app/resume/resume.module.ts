@@ -1,4 +1,4 @@
-import { ProjectsService } from './services/projects.service';
+import { ResumeService } from './services/resume.service';
 import { EducationComponent } from './education/education.component';
 import { WorkComponent } from './work/work.component';
 import { SkillsComponent } from './skills/skills.component';
@@ -21,7 +21,7 @@ import { MatIconModule} from '@angular/material/icon';
         MatIconModule],
     declarations: [ResumeComponent, AboutMeComponent, ContactComponent, EducationComponent, ProjectsComponent, SkillsComponent, WorkComponent],
     exports: [ResumeComponent],
-    providers: [ProjectsService],
+    providers: [ResumeService],
     entryComponents: []
   })
   export class ResumeModule {}

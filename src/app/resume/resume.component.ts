@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from './models/project.model';
-import { ProjectsService } from './services/projects.service';
+import { ResumeService } from './services/resume.service';
 import { Resume } from './models/resume.model';
 
 @Component({
@@ -12,7 +12,7 @@ export class ResumeComponent implements OnInit {
 
   resume: Resume;
 
-  constructor(private projectsService: ProjectsService) { }
+  constructor(private projectsService: ResumeService) { }
 
   ngOnInit(): void {
     this.projectsService.loadResume().subscribe((resume: Resume) => {

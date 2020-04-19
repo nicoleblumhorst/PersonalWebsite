@@ -1,4 +1,4 @@
-import { ProjectsService } from './../services/projects.service';
+import { ResumeService } from '../services/resume.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { Project } from '../models/project.model';
 

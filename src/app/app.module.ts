@@ -1,5 +1,5 @@
 import { HttpClient } from 'selenium-webdriver/http';
-import { ProjectsService } from './resume/services/projects.service';
+import { ResumeService } from './resume/services/resume.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BucketListService } from './bucket-list/bucket-list.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -27,7 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     ResumeModule
   ],
-  providers: [BucketListService, ProjectsService],
+  providers: [BucketListService, ResumeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
