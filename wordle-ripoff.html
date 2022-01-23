@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+      body {
+          color: #d7dadc;
+          background-color: #121214;
+      }
+      .board {
+          width: 350px;
+          height: 420px;
+          display: grid;
+          grid-template-rows: repeat(6, 1fr);
+          grid-gap: 5px;
+          padding: 10px;
+          box-sizing: border-box;
+      }
+      .word {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-gap: 5px;
+      }
+      .tile {
+          width: 62px;
+          height: 62px;
+          border: 2px solid #3a3a3b;
+          font-size: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+  </style>
+</head>
+<body>
+  <div class="board">
+    <div class="word">
+      <div class="tile">T</div>
+      <div class="tile">E</div>
+      <div class="tile">A</div>
+      <div class="tile">C</div>
+      <div class="tile">H</div>
+    </div>
+    <div class="word">
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+    </div>
+  </div>
+</body>
+</html>
